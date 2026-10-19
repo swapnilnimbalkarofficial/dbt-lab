@@ -1,0 +1,183 @@
+1. dsp all emp whose names end with 's'
+
+select * from emp
+where deptno in (select deptno from dept
+	where dname like '%s');
+
+2. dsp ename whose have max sal in dept account
+
+select ename from emp
+where sal=(select max(sal) from emp
+where deptno=(select deptno from dept
+where dname = 'ACCOUNTING'));
+
+*3. dsp dept name with higest comm
+
+select dname from dept
+where deptno=(select deptno from emp
+where comm=(select max(comm) from emp));
+
+4. dsp the empname whose dept name the second char as 'a'.
+
+select ename, from emp
+where deptno=(select deptno from dept
+where dname like '_a%');
+
+5. dsp all emp whose deptno is same as Scott's.
+
+select * from emp
+where deptno=(select deptno from emp
+where ename='scott');
+
+6. dsp all emp in the 'Operation' and 'Accounting' dept
+
+select * from emp
+where deptno in (select deptno from dept
+where dname in('OPERATIONS', 'ACCOUNTING'));
+
+7. dsp emp who have sal > than miller 
+
+select * from emp
+where sal > (select sal from emp 
+where ename='MILLER');
+
+*8. dsp emp whose job is not the same as allen and whose sal > than martin's 
+
+select * from emp
+where job != (select job from emp 
+where ename='ALLEN') and
+sal>(select sal from emp
+where ename='MARTIN');
+
+*9. dsp emp who are in the same loc as adam manager
+
+select * from emp
+where deptno=(select deptno from dept
+where loc=(select loc from dept
+where deptno=(select deptno from emp
+where empno=(select mgr from emp
+where ename='adams'))));
+
+*10. dsp job , manager, and no of emp who work for jones
+
+select  job, mgr,count(*) from emp
+where mgr=(select empno from emp
+where ename='jones')
+group by job, mgr;
+
+11. dsp emp details who report to blake and have a comm
+
+select * from emp 
+where mgr = (select empno from emp
+where ename='blake') and comm is not null;
+
+12. dsp all emp in sales dept with a comm and hired before the last person hired
+
+select * from emp
+where deptno=(select deptno from dept
+where dname='sales') and comm is not null
+and hiredate <(select max(hiredate) from emp);
+
+13. dsp the dept name  of emp whose sal is greater than avg sal of all clerks.
+
+select dname from dept
+where deptno in (select deptno from emp
+where sal > (select avg(sal) from emp
+where job='clerk'));
+
+14. dsp ename with min sal in research dept
+
+select ename from emp
+where sal = (select min(sal) from emp
+where deptno=(select deptno from dept
+where dname='research'));
+
+
+15. dsp details of emp working as salesman in Chicago
+
+select * from emp
+where job ='salesman' and 
+deptno=(select deptno from dept
+where loc='chicago');
+
+16. dsp emp with comm greater than the maximum sal of all salesman or who do not report to king.
+
+select * from emp
+where comm > (select max(sal) from emp
+where job='salesman') or
+mgr !=(select empno from emp
+where ename='king');
+
+*17. dsp name of emp who earn the higest sal in their respective job.
+
+select ename from emp e1
+where sal=(select max(sal) from emp e2
+where e1.job=e2.job);
+
+18. dsp empno and name of the emp working as clerk and earning the higest sal among clerks 
+
+select empno, ename from emp
+where job='clerk' and sal=(select max(sal)
+from emp where job='clerk');
+
+*19. dsp the emp name, dep name, and loc of clerks reporting to blake with a sal less than martin 
+
+select ename,(select dname from dept d1
+where d1.deptno=e1.deptno),(select loc from dept d2
+where d2.deptno=e1.deptno) from emp e1
+where job='clerk' and mgr=(select empno from emp
+where ename='blake') and sal<(select sal from emp
+where ename='martin');
+
+20. dsp no of emp whose comm is more than their sal
+
+select count(*) from emp
+where comm>sal;
+
+21. dsp info from the emp table for all emp where deptno is the same as jones's
+
+select * from emp
+where deptno=(select deptno from emp
+where ename='jones');
+
+22. dsp info from emp for all emp wher deptno is same as miller
+
+select * from emp
+where deptno=(select deptno from emp
+where ename='miller');
+
+23.  dsp info from emp for all emp whose sal is less than the avg sal of their dept (deptno)
+
+select * from emp e1
+where sal > (select avg(sal) from emp e2
+where e1.deptno=e2.deptno);
+
+24. dsp info from emp for all emp whose  sal is greater than all emp in deparment no 20. 
+
+select * from emp
+where sal>all(select sal from emp
+where deptno=20);
+
+25. dsp info from emp for all emp whose sal greater han any emp in dept number 30.
+
+select * from emp
+where sal>any(select sal from emp
+where deptno=30);
+
+26. dsp dname and loc from the dept where emp exist
+
+select dname,loc from dept
+where exists (select 1 from emp
+where emp.deptno= dept.deptno);
+
+27. dsp dname and loc from dept where emp do not exist
+ 
+select dname,loc from dept
+where not exists (select 1 from emp
+where emp.deptno= dept.deptno);
+
+28. dsp info from the emp for all emp where deptno is same as that of smith and blake 
+
+select * from emp
+where deptno in(select deptno from emp
+where ename in('smith','blake'));

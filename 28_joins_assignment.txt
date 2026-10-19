@@ -1,0 +1,98 @@
+
+INNER JOIN Queries
+
+1. Retrieve the names of employees along with their department names(Note:-solve with inner join).
+
+select ename, dname from emp
+natural join dept; 
+
+2. Retrieve the names, job titles, and department names of employees who work in the "SALES" department.
+
+select ename, job, dname from emp
+natural join dept
+where dname='sales'; 
+
+3. Retrieve the names of managers along with the total number of employees they manage.
+
+select m.ename, count(e.ename)
+from emp e, emp m
+where e.mgr = m.empno
+group by m.empno, m.ename;
+
+LEFT OUTER JOIN Queries
+
+4.Retrieve the names of all employees along with their corresponding department names. If an employee does not belong to any department, display their name with a NULL department.(Note:-solve it using LEFT OUTER JOIN)
+
+select dname, ename from emp 
+left outer join dept using (deptno);
+
+select dname, ename from emp 
+right outer join dept using (deptno);
+
+5.Retrieve the names of all departments along with the names of employees who work in each department. If a department has no employees, display the department name with a NULL employee.
+
+select dname, ename from dept 
+left outer join emp using (deptno)
+order by deptno;
+
+6.Retrieve the names of all employees and their corresponding manager names. If an employee does not have a manager, display their name with a NULL manager.
+
+select e.ename, m.ename from dept 
+left outer join emp using (deptno)
+order by deptno;
+
+SELF JOIN QUESTIONS
+
+7.Retrieve the names of employees along with the names of their managers.
+
+select e.ename, m.ename
+from emp e, emp m
+where e.mgr = m.empno;
+
+8.Retrieve the names of employees along with their managers' job titles.
+
+select e.ename, m.job
+from emp e, emp m
+where e.mgr = m.empno;
+
+9.Retrieve the names of employees along with the names and hire dates of their managers.
+
+select e.ename, m.hiredate, m.ename
+from emp e, emp m
+where e.mgr = m.empno;
+
+10. Retrieve the names of employees along with the names and salaries of their managers.
+
+select e.ename, m.sal, m.ename
+from emp e, emp m
+where e.mgr = m.empno;
+
+11.Retrieve the names of employees along with the names of their managers' departments.
+
+select e.ename, d.dname
+from emp e, emp m, dept d
+where m.mgr = e.empno and e.deptno = d.deptno;
+
+12. List employees who earn at list 3000 per year and are not clerks, with their name, job, annual salary, department number, and department name.
+
+select dname, ename, job,(sal+ifnull(comm,0))*12 as annual from
+emp join dept using (deptno)
+where sal >= 3000 and job!='clerk';
+
+13. List all employees by name and employee number along with their manager's name and employee number.
+
+select e.ename, m.ename, e.empno as emp, m.empno as mag
+from emp e, emp m
+where e.mgr = m.empno;
+
+14. Display the department name along with the total salary in each department.
+
+select dname, sum(sal) as total from
+emp join dept using (deptno)
+group by dname;
+
+15. Display the employee name,department name of employees who earn the maximum salary and have no reporting manager.
+
+select ename, dname
+from emp join dept using (deptno)
+where mgr is null and sal = (select max(sal) from emp);

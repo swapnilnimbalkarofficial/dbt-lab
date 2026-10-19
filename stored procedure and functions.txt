@@ -1,0 +1,301 @@
+1. get employees from emp table.
+
+delimiter //
+create procedure getEmployees()
+begin
+	select * from emp;
+end//
+delimiter ;
+
+call getEmployees();
+
+2. proece with input param
+
+delimiter //
+
+create procedure getEmpDetails(in p_empno int)
+begin 
+	select *
+	from emp
+	where empno=p_empno;
+end//
+
+delimiter ;
+
+call getEmpDetails(7369);
+
+
+3. get employee details by department no 
+
+delimiter //
+create procedure getDepartmentDetails(in p_deptno int)
+begin 
+	select * from emp
+	where deptno=p_deptno;
+end//
+
+delimiter ;
+
+call getDepartmentDetails(30);
+
+4. get manager details 
+
+delimiter //
+create procedure getManagerDetails()
+begin 
+	select * from emp
+	where empno in(select distinct mgr from emp);
+end//
+delimiter ;
+
+call getManagerDetails(7398);
+
+drop procedure getManagerDetails;
+
+show procedure status 
+where db='cdac';
+
+
+5. emp count by dept 
+
+delimiter //
+create procedure getCountByDept(in p_deptno int)
+begin 
+	select count(*) from emp
+	where p_deptno=deptno;
+end//
+delimiter ;
+
+call getCountByDept(20);
+
+6. update emp salary 
+
+delimiter //
+create procedure updateSal(in p_empno int, in p_sal decimal(10,2))
+begin
+	update emp
+	set sal=p_sal
+	where empno=p_empno;
+	end//
+delimiter ;
+
+call updateSal(7788, 3900.00);
+
+7. update manager sal by 10%
+
+delimiter //   
+create procedure updateMan()
+begin 
+	update emp
+	set sal=sal*1.1
+	where job='manager';
+end//
+delimiter ;
+
+call updateMan;
+
+8. get total sal by emp name
+
+delimiter //
+create procedure getTotalSal(in p_ename varchar(12))
+begin 
+	select ename, sal+ifnull(comm,0) as totalSal
+	from emp
+	where ename=p_ename;
+end//
+
+delimiter ;
+
+call getTotalSal('MILLER');
+
+9. get sal, hiredate, deptno by empname
+
+delimiter //
+create procedure getempDetails(in p_ename varchar(20))
+begin 
+	select ename, sal, hiredate, deptno from emp
+	where ename=p_ename;
+end//
+delimiter ;
+
+call getempDetails('jones');
+
+
+10. update emp sal by ename
+
+delimiter //
+create procedure updateEmployeeSal(in p_ename varchar(20), in p_sal decimal(10,2))
+begin 
+	update emp 
+	set sal=p_sal
+	where ename=p_ename;
+end//
+
+delimiter ;
+
+call updateEmployeeSal('allen', 23000);
+
+11. procedure to display 10 times
+
+delimiter //
+create procedure displayName()
+begin
+	declare counter int default 1;
+	while counter<=10 do
+		select 'CDAC';
+		set counter=counter+1;
+	end while;
+end //
+
+delimiter ;
+
+call displayName;
+
+12. display first 10 odd numbers
+
+delimiter //
+create procedure oddNumber()
+begin 
+	declare counter INT default 1;
+	declare oddNumber int default 1;
+	while
+		counter<20 do
+			select oddNumber;
+			set counter=counter+2;
+			set oddNumber=oddNumber+2;
+	end while;
+end//
+delimiter ;
+
+call oddNumber; 
+
+13. display even 10 
+
+delimiter //
+create procedure evenNumber()
+begin 
+	declare counter INT default 2;
+	declare evenNumber int default 2;
+	while
+		counter<20 do
+			select evenNumber;
+			set counter=counter+2;
+			set evenNumber=evenNumber+2;
+	end while;
+end//
+delimiter ;
+
+call evenNumber;
+
+14. display mul of 5
+
+delimiter //
+create procedure displayMul()
+begin 
+	declare i int default 1;
+	while i<=10 do
+		select 17*i as t17;
+		set i=i+1;
+	end while;
+end//
+delimiter ;
+
+call displayMul();
+
+15. proce to assign comm to salesperson without it
+
+delimiter //
+create procedure assignComm(in p_empno int, in p_comm int)
+begin 
+	update emp
+	set comm=p_comm
+	where job='salesman' and comm is null;
+end//
+delimiter ;
+
+call assignComm(20,2000);
+
+16. procedure to get employee details by emp number
+
+delimiter //
+create procedure getEmployeeDetails(in p_empno int)
+begin 
+	select * from emp
+	where empno=p_empno;
+end//
+delimiter ;
+
+call getEmployeeDetails(7782);
+
+
+
+17. update emp comm by empno
+
+delimiter //
+create procedure updateEmpByNo(in p_empno int, in p_comm int)
+begin 
+	update emp 
+	set comm=p_comm
+	where empno=p_empno;
+end//
+delimiter ;
+
+call updateEmpByNo(1111, 5400);
+
+
+18. to check if a number is even or odd using if then statement
+
+delimiter //
+create procedure checkEvenOdd(in p_number int)
+begin	
+	if mod(p_number, 2)=0 then
+		select 'even';
+	else
+		select 'odd';
+	end if;
+end//
+
+delimiter ;
+
+call checkEvenOdd(3);
+
+
+19. cal factorial of number using loop and leave
+
+delimiter //
+create procedure calFactorial(in no int, out fact bigint)
+begin
+	declare counter int default 1;
+	declare factorial bigint default 1;
+	myloop:loop
+		set factorial=factorial*counter;
+		set counter=counter+1;
+		if(counter>no) then 
+		leave myloop;
+		leave myloop;
+		end if;
+	end loop;
+end//
+delimiter ;
+
+call calFactorial(10);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

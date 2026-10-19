@@ -1,0 +1,3347 @@
+Microsoft Windows [Version 10.0.26200.9711]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Program Files\MongoDB\Server\9.0\bin>mongo
+'mongo' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Program Files\MongoDB\Server\9.0\bin>mongod
+{"t":{"$date":"2026-10-18T04:35:00.045+05:30"},"s":"I",  "c":"-",        "id":8991200, "ctx":"thread1","msg":"Shuffling initializers","attr":{"seed":3334647311}}
+{"t":{"$date":"2026-10-18T04:35:00.206+05:30"},"s":"I",  "c":"CONTROL",  "id":97374,   "ctx":"thread1","msg":"Automatically disabling TLS 1.0 and TLS 1.1, to force-enable TLS 1.1 specify --sslDisabledProtocols 'TLS1_0'; to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'"}
+{"t":{"$date":"2026-10-18T04:35:00.238+05:30"},"s":"I",  "c":"EXECUTOR", "id":11280000,"ctx":"thread1","msg":"Starting thread pool","attr":{"poolName":"AuthorizationRouter","numThreads":0,"minThreads":0,"maxThreads":1000000000}}
+{"t":{"$date":"2026-10-18T04:35:00.244+05:30"},"s":"I",  "c":"EXECUTOR", "id":11280000,"ctx":"thread1","msg":"Starting thread pool","attr":{"poolName":"ThreadPool1","numThreads":0,"minThreads":0,"maxThreads":1}}
+{"t":{"$date":"2026-10-18T04:35:00.248+05:30"},"s":"I",  "c":"NETWORK",  "id":4915701, "ctx":"thread1","msg":"Initialized wire specification","attr":{"spec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":29},"incomingInternalClient":{"minWireVersion":0,"maxWireVersion":29},"outgoing":{"minWireVersion":6,"maxWireVersion":29},"isInternalClient":true}}}
+{"t":{"$date":"2026-10-18T04:35:00.257+05:30"},"s":"I",  "c":"EXECUTOR", "id":11280000,"ctx":"thread1","msg":"Starting thread pool","attr":{"poolName":"ReplWriterWorkerThreadPool","numThreads":0,"minThreads":0,"maxThreads":16}}
+{"t":{"$date":"2026-10-18T04:35:00.260+05:30"},"s":"I",  "c":"CONTROL",  "id":5945603, "ctx":"thread1","msg":"Multi threading initialized"}
+{"t":{"$date":"2026-10-18T04:35:00.261+05:30"},"s":"I",  "c":"EXECUTOR", "id":11280000,"ctx":"thread1","msg":"Starting thread pool","attr":{"poolName":"ReadWriteConcernDefaults","numThreads":0,"minThreads":0,"maxThreads":1}}
+{"t":{"$date":"2026-10-18T04:35:00.262+05:30"},"s":"I",  "c":"CONTROL",  "id":4615611, "ctx":"initandlisten","msg":"MongoDB starting","attr":{"pid":1492,"port":27017,"dbPath":"/data/db","architecture":"64-bit","host":"DESKTOP-JV0OISV"}}
+{"t":{"$date":"2026-10-18T04:35:00.266+05:30"},"s":"E",  "c":"CONTROL",  "id":20557,   "ctx":"initandlisten","msg":"DBException in initAndListen, terminating","attr":{"error":"NonExistentPath: Data directory \\data\\db not found. Create the missing directory or specify another path using (1) the --dbpath command line option, or (2) by adding the 'storage.dbPath' option in the configuration file."}}
+{"t":{"$date":"2026-10-18T04:35:00.267+05:30"},"s":"I",  "c":"REPL",     "id":4784900, "ctx":"initandlisten","msg":"Stepping down the ReplicationCoordinator for shutdown","attr":{"waitTimeMillis":15000}}
+{"t":{"$date":"2026-10-18T04:35:00.271+05:30"},"s":"I",  "c":"REPL",     "id":4794602, "ctx":"initandlisten","msg":"Attempting to enter quiesce mode"}
+{"t":{"$date":"2026-10-18T04:35:00.271+05:30"},"s":"I",  "c":"-",        "id":6371601, "ctx":"initandlisten","msg":"Shutting down the FLE Crud thread pool"}
+{"t":{"$date":"2026-10-18T04:35:00.271+05:30"},"s":"I",  "c":"COMMAND",  "id":4784901, "ctx":"initandlisten","msg":"Shutting down the MirrorMaestro"}
+{"t":{"$date":"2026-10-18T04:35:00.271+05:30"},"s":"I",  "c":"SHARDING", "id":4784902, "ctx":"initandlisten","msg":"Shutting down the WaitForMajorityService"}
+{"t":{"$date":"2026-10-18T04:35:00.271+05:30"},"s":"I",  "c":"NETWORK",  "id":4784905, "ctx":"initandlisten","msg":"Shutting down the global connection pool"}
+{"t":{"$date":"2026-10-18T04:35:00.271+05:30"},"s":"I",  "c":"NETWORK",  "id":4784918, "ctx":"initandlisten","msg":"Shutting down the ReplicaSetMonitor"}
+{"t":{"$date":"2026-10-18T04:35:00.272+05:30"},"s":"I",  "c":"SHARDING", "id":9439300, "ctx":"initandlisten","msg":"Shutting down the filtering metadata cache"}
+{"t":{"$date":"2026-10-18T04:35:00.272+05:30"},"s":"I",  "c":"-",        "id":11437200,"ctx":"initandlisten","msg":"Shutting down the ReadWriteConcernDefaults"}
+{"t":{"$date":"2026-10-18T04:35:00.272+05:30"},"s":"I",  "c":"CONTROL",  "id":4784928, "ctx":"initandlisten","msg":"Shutting down the TTL monitor"}
+{"t":{"$date":"2026-10-18T04:35:00.273+05:30"},"s":"I",  "c":"CONTROL",  "id":4784929, "ctx":"initandlisten","msg":"Acquiring the global lock for shutdown"}
+{"t":{"$date":"2026-10-18T04:35:00.273+05:30"},"s":"I",  "c":"-",        "id":4784931, "ctx":"initandlisten","msg":"Dropping the scope cache for shutdown"}
+{"t":{"$date":"2026-10-18T04:35:00.273+05:30"},"s":"I",  "c":"-",        "id":10175800,"ctx":"initandlisten","msg":"Shutting down the standalone executor"}
+{"t":{"$date":"2026-10-18T04:35:00.273+05:30"},"s":"I",  "c":"CONTROL",  "id":20565,   "ctx":"initandlisten","msg":"Now exiting"}
+{"t":{"$date":"2026-10-18T04:35:00.273+05:30"},"s":"I",  "c":"CONTROL",  "id":8423404, "ctx":"initandlisten","msg":"mongod shutdown complete","attr":{"Summary oftime elapsed":{"Statistics":{"enterTerminalShutdownMillis":0,"stepDownReplCoordMillis":4,"quiesceModeMillis":0,"stopFLECrudMillis":0,"shutDownMirrorMaestroMillis":0,"shutDownWaitForMajorityServiceMillis":0,"shutDownGlobalConnectionPoolMillis":0,"shutDownSearchTaskExecutorsMillis":0,"shutDownReplicaSetMonitorMillis":0,"shutDownAndJoinReadWriteConcernDefaultsMillis":0,"shutDownTTLMonitorMillis":0,"shutDownFTDCMillis":0,"shutDownFlowControlMillis":0,"shutDownOtelMetricsMillis":0,"shutDownOtelTracesMillis":0,"shutDownReplicaSetNodeExecutorMillis":0,"closeLockFileMillis":0,"shutDownOCSPMillis":0,"shutdownTaskTotalMillis":7}}}}
+{"t":{"$date":"2026-10-18T04:35:00.273+05:30"},"s":"I",  "c":"CONTROL",  "id":23138,   "ctx":"initandlisten","msg":"Shutting down","attr":{"exitCode":100}}
+
+C:\Program Files\MongoDB\Server\9.0\bin>mongo
+'mongo' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Program Files\MongoDB\Server\9.0\bin>mongo sh
+'mongo' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Program Files\MongoDB\Server\9.0\bin>mongosh
+Current Mongosh Log ID: 6ad3ff529a1247cb716360b1
+Connecting to:          mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.13.0
+Using MongoDB:          9.0.4
+Using Mongosh:          2.13.0
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+
+To help improve our products, pseudo-anonymous usage data is collected from interactive and agentic sessions only, and sent to MongoDB periodically (https://www.mongodb.com/legal/privacy-policy).
+You can opt-out by running the disableTelemetry() command.
+
+------
+   The server generated these startup warnings when booting
+   2026-10-18T04:18:53.497+05:30: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+------
+
+test> show dbs
+admin   40.00 KiB
+config  12.00 KiB
+local   72.00 KiB
+test> use admin
+switched to db admin
+admin> db.createCollection("swapnil");
+{ ok: 1 }
+admin> show collections;
+swapnil
+system.version
+admin> db
+admin
+admin> dbs
+ReferenceError: dbs is not defined
+admin> bd
+ReferenceError: bd is not defined
+admin> db
+admin
+admin> use cdac
+switched to db cdac
+cdac> db.cdac.find()
+
+cdac> db.friends.insert({name:'swapnil',address:'nashik'});
+DeprecationWarning: Collection.insert() is deprecated. Use insertOne, insertMany, or bulkWrite.
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId('6ad403099a1247cb716360b2') }
+}
+cdac> show collections;
+friends
+cdac> db.friends.find()
+[
+  {
+    _id: ObjectId('6ad403099a1247cb716360b2'),
+    name: 'swapnil',
+    address: 'nashik'
+  }
+]
+cdac> db.frinds.insert({name:'sakshi',address:})
+Uncaught:
+SyntaxError: Unexpected token (1:40)
+
+> 1 | db.frinds.insert({name:'sakshi',address:})
+    |                                         ^
+  2 |
+
+cdac> db.frinds.insert({name:'sakshi',address:'kolhapur',workAt:'Oracle'});
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId('6ad4035a9a1247cb716360b3') }
+}
+cdac> show collections;
+friends
+frinds
+cdac> db.friends.insert({name:'sakshi',address:'kolhapur',workAt:'Oracle'});
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId('6ad403789a1247cb716360b4') }
+}
+cdac> db.frinds.drop()
+true
+cdac> show collections
+friends
+cdac> db.friends.find()
+[
+  {
+    _id: ObjectId('6ad403099a1247cb716360b2'),
+    name: 'swapnil',
+    address: 'nashik'
+  },
+  {
+    _id: ObjectId('6ad403789a1247cb716360b4'),
+    name: 'sakshi',
+    address: 'kolhapur',
+    workAt: 'Oracle'
+  }
+]
+cdac> db.friends.find().preety()
+TypeError: db.friends.find().preety is not a function
+cdac> db.friends.find().pretty()
+[
+  {
+    _id: ObjectId('6ad403099a1247cb716360b2'),
+    name: 'swapnil',
+    address: 'nashik'
+  },
+  {
+    _id: ObjectId('6ad403789a1247cb716360b4'),
+    name: 'sakshi',
+    address: 'kolhapur',
+    workAt: 'Oracle'
+  }
+]
+cdac> db.emp.insert({empno:01,sal:23000,deptno:20})
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId('6ad404669a1247cb716360b5') }
+}
+cdac> db.emp.insert({empno:02,sal:34200.deptno;23})
+Uncaught:
+SyntaxError: Identifier directly after number. (1:34)
+
+> 1 | db.emp.insert({empno:02,sal:34200.deptno;23})
+    |                                   ^
+  2 |
+
+cdac> db.emp.insert({empno:02,sal:34200,deptno;23})
+Uncaught:
+SyntaxError: Unexpected token, expected "," (1:40)
+
+> 1 | db.emp.insert({empno:02,sal:34200,deptno;23})
+    |                                         ^
+  2 |
+
+cdac> db.emp.insert({empno:02,sal:34200,deptno:23})
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId('6ad404979a1247cb716360b6') }
+}
+cdac> db.emp.insert({empno:03,sal:19300,deptno:37})
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId('6ad404b79a1247cb716360b7') }
+}
+cdac> db.emp.insert({empno:03,sal:94200, deptno:31})
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId('6ad404f09a1247cb716360b8') }
+}
+cdac> db.emp.find().pretty()
+[
+  {
+    _id: ObjectId('6ad404669a1247cb716360b5'),
+    empno: 1,
+    sal: 23000,
+    deptno: 20
+  },
+  {
+    _id: ObjectId('6ad404979a1247cb716360b6'),
+    empno: 2,
+    sal: 34200,
+    deptno: 23
+  },
+  {
+    _id: ObjectId('6ad404b79a1247cb716360b7'),
+    empno: 3,
+    sal: 19300,
+    deptno: 37
+  },
+  {
+    _id: ObjectId('6ad404f09a1247cb716360b8'),
+    empno: 3,
+    sal: 94200,
+    deptno: 31
+  }
+]
+cdac> db.emp.deleteOne({empno:2})
+{ acknowledged: true, deletedCount: 1 }
+cdac> db.emp.find()
+[
+  {
+    _id: ObjectId('6ad404669a1247cb716360b5'),
+    empno: 1,
+    sal: 23000,
+    deptno: 20
+  },
+  {
+    _id: ObjectId('6ad404b79a1247cb716360b7'),
+    empno: 3,
+    sal: 19300,
+    deptno: 37
+  },
+  {
+    _id: ObjectId('6ad404f09a1247cb716360b8'),
+    empno: 3,
+    sal: 94200,
+    deptno: 31
+  }
+]
+cdac> db.dept.createIndex({deptno:1})
+deptno_1
+cdac> db.emp.getIndex()
+TypeError: db.emp.getIndex is not a function
+cdac> db.emp.getIndex
+cdac.emp.getIndex
+cdac> db.emp.createIndex({deptno:3})
+deptno_3
+cdac> db.emp.getIndex
+cdac.emp.getIndex
+cdac> db.persons.drop()
+|
+| db.persons.insert ( {
+|       name: {first: 'Harish', last: 'Chandra'},
+|       gender: 'M',
+|       yearOfBirth: 1962,
+|       livesIn: 'Mumbai',
+|       countriesVisited: ['India', 'Singapore', 'Thailand', 'United Kingdom', 'Spain', 'Denmark', 'United States of America'],
+|       languages: [
+|               {name: 'Hindi', proficiency: 'Fluent'},
+|               {name: 'English', proficiency: 'Fluent'},
+|               {name: 'Sanskrit', proficiency: 'Intermediate'} ]
+| } )
+|
+| db.persons.insert ( {
+|       name: {first: 'Zoa', last: 'Hendrik'},
+|       gender: 'F',
+|       yearOfBirth: 1988,
+|       livesIn: 'Barcelona',
+|       countriesVisited: ['Spain', 'Denmark', 'France'],
+|       languages: [
+|               {name: 'Spanish', proficiency: 'Fluent'},
+|               {name: 'Catalan', proficiency: 'Fluent'},
+|               {name: 'English', proficiency: 'Intermediate'} ],
+|       married: 'No'
+| } )
+|
+| db.persons.insert ( {
+|       name: {first: 'Narayan', last: 'Sundaram'},
+|       gender: 'M',
+|       yearOfBirth: 1960,
+|       livesIn: 'Jaipur',
+|       counriesVisited: ['India', 'United States of America', 'Netherlands', 'China'],
+|       languages: [
+|               {name: 'Tamil', proficiency: 'Fluent'},
+|               {name: 'English', proficiency: 'Fluent'},
+|               {name: 'Hindi', proficiency: 'Intermediate'},
+|               {name: 'Chinese', proficiency: 'Intermediate'} ],
+|       married: 'Yes'
+| } )
+|
+| db.persons.insert ( {
+|       name: {first: 'Shailesh', last: 'Sharma'},
+|       gender: 'M',
+|       yearOfBirth: 1962,
+|       livesIn: 'Singapore',
+|       countriesVisited: ['India', 'Singapore', 'China', 'Taiwan', 'United States of America', 'Sri Lanka', 'Mayalsia', 'Australia'],
+|       languages: [
+|               {name: 'Hindi', proficiency: 'Fluent'},
+|               {name: 'English', proficiency: 'Fluent'} ]
+| } )
+|
+| db.persons.insert ( {
+|       name: {first: 'Mark', last: 'Smith'},
+|       gender: 'M',
+|       livesIn: 'Chicago',
+|       countriesVisited: ['United States of America', 'Canada', 'France', 'Spain', 'India', 'Australia'],
+|       languages: [ {name: 'English', proficiency: 'Fluent'} ]
+| } )
+|
+| db.persons.insert ( {
+|       name: {first: 'Rita', last: 'Chauhan'},
+|       gender: 'F',
+|       yearOfBirth: 1989,
+|       livesIn: 'Mumbai',
+|       countriesVisited: ['India'],
+|       languages: [
+|               {name: 'Hindi', proficiency: 'Fluent'},
+|               {name: 'English', proficiency: 'Fluent'} ],
+|       married: 'No'
+| } )
+|
+| db.persons.insert ( {
+|       name: {first: 'Liza', last: 'Bordelon'},
+|       gender: 'F',
+|       yearOfBirth: 1971,
+|       livesIn: 'Minneapolis',
+|       countriesVisited: ['United States of America', 'Canada'],
+|       languages: [
+|               {name: 'English', proficiency: 'Fluent'},
+|               {name: 'French', proficiency: 'Fluent'},
+|               {name: 'German', proficiency: 'Intermediate'},
+|               {name: 'Greek', proficiency: 'Intermediate'},
+|               {name: 'Latin', proficiency: 'Intermediate'},
+|               {name: 'Sanskrit', proficiency: 'Beginner'} ]
+| } )
+|
+| db.persons.insert ( {
+|       name: {first: 'Jenny', last: 'Jones'},
+|       gender: 'F',
+|       yearOfBirth: 1985,
+|       livesIn: 'Oxford',
+|       countriesVisited: ['United Kingdom'],
+|       languages: [ {name: 'English', proficiency: 'Fluent'} ],
+|       married: 'No'
+| } )
+|
+| db.persons.insert ( {
+|       name: {first: 'Sapna', last: 'Chetri'},
+|       gender: 'F',
+|       yearOfBirth: 1989,
+|       livesIn: 'Siliguri',
+|       countriesVisited: ['India'],
+|       languages: [
+|               {name: 'Nepali', proficiency: 'Fluent'},
+|               {name: 'Hindi', proficiency: 'Fluent'},
+|               {name: 'English', proficiency: 'Intermediate'} ],
+|       married: 'No'
+| } )
+|
+| db.persons.insert ( {
+|       name: {first: 'Jenny', middle: 'H', last: 'Jones'},
+|       gender: 'F',
+|       yearOfBirth: 1988,
+|       livesIn: 'London',
+|       countriesVisited: ['United Kingdom'],
+|       languages: [ {name: 'English', proficiency: 'Fluent'} ],
+|       married: 'Yes'
+| } )
+|
+| db.persons.insert ( {
+|       name: {first: 'Lakhpa', last: 'Sherpa'},
+|       gender: 'M',
+|       yearOfBirth: 1989,
+|       lievsIn: 'Gangtok',
+|       countriesVisited: ['India'],
+|       languages: [
+|               {name: 'Nepali', proficiency: 'Fluent'},
+|               {name: 'English', proficiency: 'Fluent'},
+|               {name: 'Hindi', proficiency: 'Intermediate'} ],
+|       married: 'No'
+| } )
+|
+| db.persons.insert ( {
+|       name: {first: 'Anita', last: 'Gogia'},
+|       gender: 'F',
+|       yearOfBirth: 1965,
+|       livesIn: 'New Delhi',
+|       countriesVisited: ['India', 'United Kingdom', 'Canada', 'United States of America'],
+|       languages: [
+|               {name: 'Hindi', proficiency: 'Fluent'},
+|               {name: 'Punjabi', proficiency: 'Fluent'},
+|               {name: 'English', proficiency: 'Fluent'} ],
+|       married: 'Yes'
+| } )
+|
+| db.persons.insert ( {
+|       name: {first: 'Neeharika', last: 'Chauhan'},
+|       gender: 'F',
+|       yearOfBirth: 1988,
+|       livesIn: 'Jaipur',
+|       countriesVisited: ['India'],
+|       languages: [
+|               {name: 'Hindi', proficiency: 'Fluent'},
+|               {name: 'English', proficiency: 'Intermediate'} ],
+|       married: 'No'
+| } )
+|
+| db.persons.insert ( {
+|       name: {first: 'Nancy', last: 'Karin'},
+|       gender: 'F',
+|       yearOfBirth: 1992,
+|       livesIn: 'Montreal',
+|       countriesVisited: ['Canada', 'United States of America'],
+|       languages: [
+|               {name: 'English', proficiency: 'Fluent'},
+|               {name: 'French', proficiency: 'Fluent'},
+|               {name: 'German', proficiency: 'Intermediate'},
+|               {name: 'Greek', proficiency: 'Intermediate'},
+|               {name: 'Latin', proficiency: 'Intermediate'},
+|               {name: 'Sanskrit', proficiency: 'Beginner'} ]
+| } )
+|
+| db.persons.count()
+DeprecationWarning: Collection.count() is deprecated. Use countDocuments or estimatedDocumentCount.
+14
+cdac> db.collections
+cdac.collections
+cdac> db
+cdac
+cdac> db.person.find()
+
+cdac> db.persons.find()
+[
+  {
+    _id: ObjectId('6ad4071f9a1247cb716360b9'),
+    name: { first: 'Harish', last: 'Chandra' },
+    gender: 'M',
+    yearOfBirth: 1962,
+    livesIn: 'Mumbai',
+    countriesVisited: [
+      'India',
+      'Singapore',
+      'Thailand',
+      'United Kingdom',
+      'Spain',
+      'Denmark',
+      'United States of America'
+    ],
+    languages: [
+      { name: 'Hindi', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Fluent' },
+      { name: 'Sanskrit', proficiency: 'Intermediate' }
+    ]
+  },
+  {
+    _id: ObjectId('6ad4071f9a1247cb716360ba'),
+    name: { first: 'Zoa', last: 'Hendrik' },
+    gender: 'F',
+    yearOfBirth: 1988,
+    livesIn: 'Barcelona',
+    countriesVisited: [ 'Spain', 'Denmark', 'France' ],
+    languages: [
+      { name: 'Spanish', proficiency: 'Fluent' },
+      { name: 'Catalan', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Intermediate' }
+    ],
+    married: 'No'
+  },
+  {
+    _id: ObjectId('6ad4071f9a1247cb716360bb'),
+    name: { first: 'Narayan', last: 'Sundaram' },
+    gender: 'M',
+    yearOfBirth: 1960,
+    livesIn: 'Jaipur',
+    counriesVisited: [ 'India', 'United States of America', 'Netherlands', 'China' ],
+    languages: [
+      { name: 'Tamil', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Fluent' },
+      { name: 'Hindi', proficiency: 'Intermediate' },
+      { name: 'Chinese', proficiency: 'Intermediate' }
+    ],
+    married: 'Yes'
+  },
+  {
+    _id: ObjectId('6ad4071f9a1247cb716360bc'),
+    name: { first: 'Shailesh', last: 'Sharma' },
+    gender: 'M',
+    yearOfBirth: 1962,
+    livesIn: 'Singapore',
+    countriesVisited: [
+      'India',
+      'Singapore',
+      'China',
+      'Taiwan',
+      'United States of America',
+      'Sri Lanka',
+      'Mayalsia',
+      'Australia'
+    ],
+    languages: [
+      { name: 'Hindi', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Fluent' }
+    ]
+  },
+  {
+    _id: ObjectId('6ad4071f9a1247cb716360bd'),
+    name: { first: 'Mark', last: 'Smith' },
+    gender: 'M',
+    livesIn: 'Chicago',
+    countriesVisited: [
+      'United States of America',
+      'Canada',
+      'France',
+      'Spain',
+      'India',
+      'Australia'
+    ],
+    languages: [ { name: 'English', proficiency: 'Fluent' } ]
+  },
+  {
+    _id: ObjectId('6ad4071f9a1247cb716360be'),
+    name: { first: 'Rita', last: 'Chauhan' },
+    gender: 'F',
+    yearOfBirth: 1989,
+    livesIn: 'Mumbai',
+    countriesVisited: [ 'India' ],
+    languages: [
+      { name: 'Hindi', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Fluent' }
+    ],
+    married: 'No'
+  },
+  {
+    _id: ObjectId('6ad4071f9a1247cb716360bf'),
+    name: { first: 'Liza', last: 'Bordelon' },
+    gender: 'F',
+    yearOfBirth: 1971,
+    livesIn: 'Minneapolis',
+    countriesVisited: [ 'United States of America', 'Canada' ],
+    languages: [
+      { name: 'English', proficiency: 'Fluent' },
+      { name: 'French', proficiency: 'Fluent' },
+      { name: 'German', proficiency: 'Intermediate' },
+      { name: 'Greek', proficiency: 'Intermediate' },
+      { name: 'Latin', proficiency: 'Intermediate' },
+      { name: 'Sanskrit', proficiency: 'Beginner' }
+    ]
+  },
+  {
+    _id: ObjectId('6ad4071f9a1247cb716360c0'),
+    name: { first: 'Jenny', last: 'Jones' },
+    gender: 'F',
+    yearOfBirth: 1985,
+    livesIn: 'Oxford',
+    countriesVisited: [ 'United Kingdom' ],
+    languages: [ { name: 'English', proficiency: 'Fluent' } ],
+    married: 'No'
+  },
+  {
+    _id: ObjectId('6ad4071f9a1247cb716360c1'),
+    name: { first: 'Sapna', last: 'Chetri' },
+    gender: 'F',
+    yearOfBirth: 1989,
+    livesIn: 'Siliguri',
+    countriesVisited: [ 'India' ],
+    languages: [
+      { name: 'Nepali', proficiency: 'Fluent' },
+      { name: 'Hindi', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Intermediate' }
+    ],
+    married: 'No'
+  },
+  {
+    _id: ObjectId('6ad4071f9a1247cb716360c2'),
+    name: { first: 'Jenny', middle: 'H', last: 'Jones' },
+    gender: 'F',
+    yearOfBirth: 1988,
+    livesIn: 'London',
+    countriesVisited: [ 'United Kingdom' ],
+    languages: [ { name: 'English', proficiency: 'Fluent' } ],
+    married: 'Yes'
+  },
+  {
+    _id: ObjectId('6ad4071f9a1247cb716360c3'),
+    name: { first: 'Lakhpa', last: 'Sherpa' },
+    gender: 'M',
+    yearOfBirth: 1989,
+    lievsIn: 'Gangtok',
+    countriesVisited: [ 'India' ],
+    languages: [
+      { name: 'Nepali', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Fluent' },
+      { name: 'Hindi', proficiency: 'Intermediate' }
+    ],
+    married: 'No'
+  },
+  {
+    _id: ObjectId('6ad4071f9a1247cb716360c4'),
+    name: { first: 'Anita', last: 'Gogia' },
+    gender: 'F',
+    yearOfBirth: 1965,
+    livesIn: 'New Delhi',
+    countriesVisited: [ 'India', 'United Kingdom', 'Canada', 'United States of America' ],
+    languages: [
+      { name: 'Hindi', proficiency: 'Fluent' },
+      { name: 'Punjabi', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Fluent' }
+    ],
+    married: 'Yes'
+  },
+  {
+    _id: ObjectId('6ad4071f9a1247cb716360c5'),
+    name: { first: 'Neeharika', last: 'Chauhan' },
+    gender: 'F',
+    yearOfBirth: 1988,
+    livesIn: 'Jaipur',
+    countriesVisited: [ 'India' ],
+    languages: [
+      { name: 'Hindi', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Intermediate' }
+    ],
+    married: 'No'
+  },
+  {
+    _id: ObjectId('6ad4071f9a1247cb716360c6'),
+    name: { first: 'Nancy', last: 'Karin' },
+    gender: 'F',
+    yearOfBirth: 1992,
+    livesIn: 'Montreal',
+    countriesVisited: [ 'Canada', 'United States of America' ],
+    languages: [
+      { name: 'English', proficiency: 'Fluent' },
+      { name: 'French', proficiency: 'Fluent' },
+      { name: 'German', proficiency: 'Intermediate' },
+      { name: 'Greek', proficiency: 'Intermediate' },
+      { name: 'Latin', proficiency: 'Intermediate' },
+      { name: 'Sanskrit', proficiency: 'Beginner' }
+    ]
+  }
+]
+cdac> db.persons.drop()
+true
+cdac> db.persons.find()
+
+cdac> show dbs
+admin    48.00 KiB
+cdac    176.00 KiB
+config  108.00 KiB
+local    72.00 KiB
+cdac> db.persons.drop()
+|
+| db.persons.insert ( {
+|       name: {first: 'Harish', last: 'Chandra'},
+|       gender: 'M',
+|       yearOfBirth: 1962,
+|       livesIn: 'Mumbai',
+|       countriesVisited: ['India', 'Singapore', 'Thailand', 'United Kingdom', 'Spain', 'Denmark', 'United States of America'],
+|       languages: [
+|               {name: 'Hindi', proficiency: 'Fluent'},
+|               {name: 'English', proficiency: 'Fluent'},
+|               {name: 'Sanskrit', proficiency: 'Intermediate'} ]
+| } )
+|
+| db.persons.insert ( {
+|       name: {first: 'Zoa', last: 'Hendrik'},
+|       gender: 'F',
+|       yearOfBirth: 1988,
+|       livesIn: 'Barcelona',
+|       countriesVisited: ['Spain', 'Denmark', 'France'],
+|       languages: [
+|               {name: 'Spanish', proficiency: 'Fluent'},
+|               {name: 'Catalan', proficiency: 'Fluent'},
+|               {name: 'English', proficiency: 'Intermediate'} ],
+|       married: 'No'
+| } )
+|
+| db.persons.insert ( {
+|       name: {first: 'Narayan', last: 'Sundaram'},
+|       gender: 'M',
+|       yearOfBirth: 1960,
+|       livesIn: 'Jaipur',
+|       counriesVisited: ['India', 'United States of America', 'Netherlands', 'China'],
+|       languages: [
+|               {name: 'Tamil', proficiency: 'Fluent'},
+|               {name: 'English', proficiency: 'Fluent'},
+|               {name: 'Hindi', proficiency: 'Intermediate'},
+|               {name: 'Chinese', proficiency: 'Intermediate'} ],
+|       married: 'Yes'
+| } )
+|
+| db.persons.insert ( {
+|       name: {first: 'Shailesh', last: 'Sharma'},
+|       gender: 'M',
+|       yearOfBirth: 1962,
+|       livesIn: 'Singapore',
+|       countriesVisited: ['India', 'Singapore', 'China', 'Taiwan', 'United States of America', 'Sri Lanka', 'Mayalsia', 'Australia'],
+|       languages: [
+|               {name: 'Hindi', proficiency: 'Fluent'},
+|               {name: 'English', proficiency: 'Fluent'} ]
+| } )
+|
+| db.persons.insert ( {
+|       name: {first: 'Mark', last: 'Smith'},
+|       gender: 'M',
+|       livesIn: 'Chicago',
+|       countriesVisited: ['United States of America', 'Canada', 'France', 'Spain', 'India', 'Australia'],
+|       languages: [ {name: 'English', proficiency: 'Fluent'} ]
+| } )
+|
+| db.persons.insert ( {
+|       name: {first: 'Rita', last: 'Chauhan'},
+|       gender: 'F',
+|       yearOfBirth: 1989,
+|       livesIn: 'Mumbai',
+|       countriesVisited: ['India'],
+|       languages: [
+|               {name: 'Hindi', proficiency: 'Fluent'},
+|               {name: 'English', proficiency: 'Fluent'} ],
+|       married: 'No'
+| } )
+|
+| db.persons.insert ( {
+|       name: {first: 'Liza', last: 'Bordelon'},
+|       gender: 'F',
+|       yearOfBirth: 1971,
+|       livesIn: 'Minneapolis',
+|       countriesVisited: ['United States of America', 'Canada'],
+|       languages: [
+|               {name: 'English', proficiency: 'Fluent'},
+|               {name: 'French', proficiency: 'Fluent'},
+|               {name: 'German', proficiency: 'Intermediate'},
+|               {name: 'Greek', proficiency: 'Intermediate'},
+|               {name: 'Latin', proficiency: 'Intermediate'},
+|               {name: 'Sanskrit', proficiency: 'Beginner'} ]
+| } )
+|
+| db.persons.insert ( {
+|       name: {first: 'Jenny', last: 'Jones'},
+|       gender: 'F',
+|       yearOfBirth: 1985,
+|       livesIn: 'Oxford',
+|       countriesVisited: ['United Kingdom'],
+|       languages: [ {name: 'English', proficiency: 'Fluent'} ],
+|       married: 'No'
+| } )
+|
+| db.persons.insert ( {
+|       name: {first: 'Sapna', last: 'Chetri'},
+|       gender: 'F',
+|       yearOfBirth: 1989,
+|       livesIn: 'Siliguri',
+|       countriesVisited: ['India'],
+|       languages: [
+|               {name: 'Nepali', proficiency: 'Fluent'},
+|               {name: 'Hindi', proficiency: 'Fluent'},
+|               {name: 'English', proficiency: 'Intermediate'} ],
+|       married: 'No'
+| } )
+|
+| db.persons.insert ( {
+|       name: {first: 'Jenny', middle: 'H', last: 'Jones'},
+|       gender: 'F',
+|       yearOfBirth: 1988,
+|       livesIn: 'London',
+|       countriesVisited: ['United Kingdom'],
+|       languages: [ {name: 'English', proficiency: 'Fluent'} ],
+|       married: 'Yes'
+| } )
+|
+| db.persons.insert ( {
+|       name: {first: 'Lakhpa', last: 'Sherpa'},
+|       gender: 'M',
+|       yearOfBirth: 1989,
+|       lievsIn: 'Gangtok',
+|       countriesVisited: ['India'],
+|       languages: [
+|               {name: 'Nepali', proficiency: 'Fluent'},
+|               {name: 'English', proficiency: 'Fluent'},
+|               {name: 'Hindi', proficiency: 'Intermediate'} ],
+|       married: 'No'
+| } )
+|
+| db.persons.insert ( {
+|       name: {first: 'Anita', last: 'Gogia'},
+|       gender: 'F',
+|       yearOfBirth: 1965,
+|       livesIn: 'New Delhi',
+|       countriesVisited: ['India', 'United Kingdom', 'Canada', 'United States of America'],
+|       languages: [
+|               {name: 'Hindi', proficiency: 'Fluent'},
+|               {name: 'Punjabi', proficiency: 'Fluent'},
+|               {name: 'English', proficiency: 'Fluent'} ],
+|       married: 'Yes'
+| } )
+|
+| db.persons.insert ( {
+|       name: {first: 'Neeharika', last: 'Chauhan'},
+|       gender: 'F',
+|       yearOfBirth: 1988,
+|       livesIn: 'Jaipur',
+|       countriesVisited: ['India'],
+|       languages: [
+|               {name: 'Hindi', proficiency: 'Fluent'},
+|               {name: 'English', proficiency: 'Intermediate'} ],
+|       married: 'No'
+| } )
+|
+| db.persons.insert ( {
+|       name: {first: 'Nancy', last: 'Karin'},
+|       gender: 'F',
+|       yearOfBirth: 1992,
+|       livesIn: 'Montreal',
+|       countriesVisited: ['Canada', 'United States of America'],
+|       languages: [
+|               {name: 'English', proficiency: 'Fluent'},
+|               {name: 'French', proficiency: 'Fluent'},
+|               {name: 'German', proficiency: 'Intermediate'},
+|               {name: 'Greek', proficiency: 'Intermediate'},
+|               {name: 'Latin', proficiency: 'Intermediate'},
+|               {name: 'Sanskrit', proficiency: 'Beginner'} ]
+| } )
+|
+| db.persons.count()
+14
+cdac> db.emp.count()
+3
+cdac>
+
+cdac>
+
+cdac> db.persons.getIndex()
+TypeError: db.persons.getIndex is not a function
+cdac> db.persons.getIndex
+cdac.persons.getIndex
+cdac> db.persons.getIndex({first:'Nancy'})
+TypeError: db.persons.getIndex is not a function
+cdac> db.persons.getIndex({first:'Nancy'})
+TypeError: db.persons.getIndex is not a function
+cdac> db.person.createIndex(first:'Nancy')
+Uncaught:
+SyntaxError: Unexpected token, expected "," (1:27)
+
+> 1 | db.person.createIndex(first:'Nancy')
+    |                            ^
+  2 |
+
+cdac> db.person.createIndex(first:'Nancy')
+Uncaught:
+SyntaxError: Unexpected token, expected "," (1:27)
+
+> 1 | db.person.createIndex(first:'Nancy')
+    |                            ^
+  2 |
+
+cdac> db.persons.getIndex()
+TypeError: db.persons.getIndex is not a function
+cdac> db.persons.createIndex(first:1)
+Uncaught:
+SyntaxError: Unexpected token, expected "," (1:28)
+
+> 1 | db.persons.createIndex(first:1)
+    |                             ^
+  2 |
+
+cdac> db.persons.createIndex({first:1})
+first_1
+cdac> db.persons.getIndex
+cdac.persons.getIndex
+cdac> db.persons.find.pretty()
+TypeError: db.persons.find.pretty is not a function
+cdac> db.persons.find().pretty()
+[
+  {
+    _id: ObjectId('6ad407c09a1247cb716360c7'),
+    name: { first: 'Harish', last: 'Chandra' },
+    gender: 'M',
+    yearOfBirth: 1962,
+    livesIn: 'Mumbai',
+    countriesVisited: [
+      'India',
+      'Singapore',
+      'Thailand',
+      'United Kingdom',
+      'Spain',
+      'Denmark',
+      'United States of America'
+    ],
+    languages: [
+      { name: 'Hindi', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Fluent' },
+      { name: 'Sanskrit', proficiency: 'Intermediate' }
+    ]
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360c8'),
+    name: { first: 'Zoa', last: 'Hendrik' },
+    gender: 'F',
+    yearOfBirth: 1988,
+    livesIn: 'Barcelona',
+    countriesVisited: [ 'Spain', 'Denmark', 'France' ],
+    languages: [
+      { name: 'Spanish', proficiency: 'Fluent' },
+      { name: 'Catalan', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Intermediate' }
+    ],
+    married: 'No'
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360c9'),
+    name: { first: 'Narayan', last: 'Sundaram' },
+    gender: 'M',
+    yearOfBirth: 1960,
+    livesIn: 'Jaipur',
+    counriesVisited: [ 'India', 'United States of America', 'Netherlands', 'China' ],
+    languages: [
+      { name: 'Tamil', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Fluent' },
+      { name: 'Hindi', proficiency: 'Intermediate' },
+      { name: 'Chinese', proficiency: 'Intermediate' }
+    ],
+    married: 'Yes'
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360ca'),
+    name: { first: 'Shailesh', last: 'Sharma' },
+    gender: 'M',
+    yearOfBirth: 1962,
+    livesIn: 'Singapore',
+    countriesVisited: [
+      'India',
+      'Singapore',
+      'China',
+      'Taiwan',
+      'United States of America',
+      'Sri Lanka',
+      'Mayalsia',
+      'Australia'
+    ],
+    languages: [
+      { name: 'Hindi', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Fluent' }
+    ]
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360cb'),
+    name: { first: 'Mark', last: 'Smith' },
+    gender: 'M',
+    livesIn: 'Chicago',
+    countriesVisited: [
+      'United States of America',
+      'Canada',
+      'France',
+      'Spain',
+      'India',
+      'Australia'
+    ],
+    languages: [ { name: 'English', proficiency: 'Fluent' } ]
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360cc'),
+    name: { first: 'Rita', last: 'Chauhan' },
+    gender: 'F',
+    yearOfBirth: 1989,
+    livesIn: 'Mumbai',
+    countriesVisited: [ 'India' ],
+    languages: [
+      { name: 'Hindi', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Fluent' }
+    ],
+    married: 'No'
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360cd'),
+    name: { first: 'Liza', last: 'Bordelon' },
+    gender: 'F',
+    yearOfBirth: 1971,
+    livesIn: 'Minneapolis',
+    countriesVisited: [ 'United States of America', 'Canada' ],
+    languages: [
+      { name: 'English', proficiency: 'Fluent' },
+      { name: 'French', proficiency: 'Fluent' },
+      { name: 'German', proficiency: 'Intermediate' },
+      { name: 'Greek', proficiency: 'Intermediate' },
+      { name: 'Latin', proficiency: 'Intermediate' },
+      { name: 'Sanskrit', proficiency: 'Beginner' }
+    ]
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360ce'),
+    name: { first: 'Jenny', last: 'Jones' },
+    gender: 'F',
+    yearOfBirth: 1985,
+    livesIn: 'Oxford',
+    countriesVisited: [ 'United Kingdom' ],
+    languages: [ { name: 'English', proficiency: 'Fluent' } ],
+    married: 'No'
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360cf'),
+    name: { first: 'Sapna', last: 'Chetri' },
+    gender: 'F',
+    yearOfBirth: 1989,
+    livesIn: 'Siliguri',
+    countriesVisited: [ 'India' ],
+    languages: [
+      { name: 'Nepali', proficiency: 'Fluent' },
+      { name: 'Hindi', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Intermediate' }
+    ],
+    married: 'No'
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360d0'),
+    name: { first: 'Jenny', middle: 'H', last: 'Jones' },
+    gender: 'F',
+    yearOfBirth: 1988,
+    livesIn: 'London',
+    countriesVisited: [ 'United Kingdom' ],
+    languages: [ { name: 'English', proficiency: 'Fluent' } ],
+    married: 'Yes'
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360d1'),
+    name: { first: 'Lakhpa', last: 'Sherpa' },
+    gender: 'M',
+    yearOfBirth: 1989,
+    lievsIn: 'Gangtok',
+    countriesVisited: [ 'India' ],
+    languages: [
+      { name: 'Nepali', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Fluent' },
+      { name: 'Hindi', proficiency: 'Intermediate' }
+    ],
+    married: 'No'
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360d2'),
+    name: { first: 'Anita', last: 'Gogia' },
+    gender: 'F',
+    yearOfBirth: 1965,
+    livesIn: 'New Delhi',
+    countriesVisited: [ 'India', 'United Kingdom', 'Canada', 'United States of America' ],
+    languages: [
+      { name: 'Hindi', proficiency: 'Fluent' },
+      { name: 'Punjabi', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Fluent' }
+    ],
+    married: 'Yes'
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360d3'),
+    name: { first: 'Neeharika', last: 'Chauhan' },
+    gender: 'F',
+    yearOfBirth: 1988,
+    livesIn: 'Jaipur',
+    countriesVisited: [ 'India' ],
+    languages: [
+      { name: 'Hindi', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Intermediate' }
+    ],
+    married: 'No'
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360d4'),
+    name: { first: 'Nancy', last: 'Karin' },
+    gender: 'F',
+    yearOfBirth: 1992,
+    livesIn: 'Montreal',
+    countriesVisited: [ 'Canada', 'United States of America' ],
+    languages: [
+      { name: 'English', proficiency: 'Fluent' },
+      { name: 'French', proficiency: 'Fluent' },
+      { name: 'German', proficiency: 'Intermediate' },
+      { name: 'Greek', proficiency: 'Intermediate' },
+      { name: 'Latin', proficiency: 'Intermediate' },
+      { name: 'Sanskrit', proficiency: 'Beginner' }
+    ]
+  }
+]
+cdac> db.persons.count()
+14
+cdac> db.persons.remove()
+DeprecationWarning: Collection.remove() is deprecated. Use deleteOne, deleteMany, findOneAndDelete, or bulkWrite.
+MongoshInvalidInputError: [COMMON-10001] Missing required argument at position 0(Collection.remove)
+cdac> db.persons.find({gender:'M'}).pretty()
+[
+  {
+    _id: ObjectId('6ad407c09a1247cb716360c7'),
+    name: { first: 'Harish', last: 'Chandra' },
+    gender: 'M',
+    yearOfBirth: 1962,
+    livesIn: 'Mumbai',
+    countriesVisited: [
+      'India',
+      'Singapore',
+      'Thailand',
+      'United Kingdom',
+      'Spain',
+      'Denmark',
+      'United States of America'
+    ],
+    languages: [
+      { name: 'Hindi', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Fluent' },
+      { name: 'Sanskrit', proficiency: 'Intermediate' }
+    ]
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360c9'),
+    name: { first: 'Narayan', last: 'Sundaram' },
+    gender: 'M',
+    yearOfBirth: 1960,
+    livesIn: 'Jaipur',
+    counriesVisited: [ 'India', 'United States of America', 'Netherlands', 'China' ],
+    languages: [
+      { name: 'Tamil', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Fluent' },
+      { name: 'Hindi', proficiency: 'Intermediate' },
+      { name: 'Chinese', proficiency: 'Intermediate' }
+    ],
+    married: 'Yes'
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360ca'),
+    name: { first: 'Shailesh', last: 'Sharma' },
+    gender: 'M',
+    yearOfBirth: 1962,
+    livesIn: 'Singapore',
+    countriesVisited: [
+      'India',
+      'Singapore',
+      'China',
+      'Taiwan',
+      'United States of America',
+      'Sri Lanka',
+      'Mayalsia',
+      'Australia'
+    ],
+    languages: [
+      { name: 'Hindi', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Fluent' }
+    ]
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360cb'),
+    name: { first: 'Mark', last: 'Smith' },
+    gender: 'M',
+    livesIn: 'Chicago',
+    countriesVisited: [
+      'United States of America',
+      'Canada',
+      'France',
+      'Spain',
+      'India',
+      'Australia'
+    ],
+    languages: [ { name: 'English', proficiency: 'Fluent' } ]
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360d1'),
+    name: { first: 'Lakhpa', last: 'Sherpa' },
+    gender: 'M',
+    yearOfBirth: 1989,
+    lievsIn: 'Gangtok',
+    countriesVisited: [ 'India' ],
+    languages: [
+      { name: 'Nepali', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Fluent' },
+      { name: 'Hindi', proficiency: 'Intermediate' }
+    ],
+    married: 'No'
+  }
+]
+cdac> db.persons.find({gender:'M'}).pretty().count()
+5
+cdac> db.persons.remove(name:'English')
+Uncaught:
+SyntaxError: Unexpected token, expected "," (1:22)
+
+> 1 | db.persons.remove(name:'English')
+    |                       ^
+  2 |
+
+cdac> db.persons.deleteOne({name:'English'})
+{ acknowledged: true, deletedCount: 0 }
+cdac> db.persons.find().pretty()
+[
+  {
+    _id: ObjectId('6ad407c09a1247cb716360c7'),
+    name: { first: 'Harish', last: 'Chandra' },
+    gender: 'M',
+    yearOfBirth: 1962,
+    livesIn: 'Mumbai',
+    countriesVisited: [
+      'India',
+      'Singapore',
+      'Thailand',
+      'United Kingdom',
+      'Spain',
+      'Denmark',
+      'United States of America'
+    ],
+    languages: [
+      { name: 'Hindi', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Fluent' },
+      { name: 'Sanskrit', proficiency: 'Intermediate' }
+    ]
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360c8'),
+    name: { first: 'Zoa', last: 'Hendrik' },
+    gender: 'F',
+    yearOfBirth: 1988,
+    livesIn: 'Barcelona',
+    countriesVisited: [ 'Spain', 'Denmark', 'France' ],
+    languages: [
+      { name: 'Spanish', proficiency: 'Fluent' },
+      { name: 'Catalan', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Intermediate' }
+    ],
+    married: 'No'
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360c9'),
+    name: { first: 'Narayan', last: 'Sundaram' },
+    gender: 'M',
+    yearOfBirth: 1960,
+    livesIn: 'Jaipur',
+    counriesVisited: [ 'India', 'United States of America', 'Netherlands', 'China' ],
+    languages: [
+      { name: 'Tamil', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Fluent' },
+      { name: 'Hindi', proficiency: 'Intermediate' },
+      { name: 'Chinese', proficiency: 'Intermediate' }
+    ],
+    married: 'Yes'
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360ca'),
+    name: { first: 'Shailesh', last: 'Sharma' },
+    gender: 'M',
+    yearOfBirth: 1962,
+    livesIn: 'Singapore',
+    countriesVisited: [
+      'India',
+      'Singapore',
+      'China',
+      'Taiwan',
+      'United States of America',
+      'Sri Lanka',
+      'Mayalsia',
+      'Australia'
+    ],
+    languages: [
+      { name: 'Hindi', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Fluent' }
+    ]
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360cb'),
+    name: { first: 'Mark', last: 'Smith' },
+    gender: 'M',
+    livesIn: 'Chicago',
+    countriesVisited: [
+      'United States of America',
+      'Canada',
+      'France',
+      'Spain',
+      'India',
+      'Australia'
+    ],
+    languages: [ { name: 'English', proficiency: 'Fluent' } ]
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360cc'),
+    name: { first: 'Rita', last: 'Chauhan' },
+    gender: 'F',
+    yearOfBirth: 1989,
+    livesIn: 'Mumbai',
+    countriesVisited: [ 'India' ],
+    languages: [
+      { name: 'Hindi', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Fluent' }
+    ],
+    married: 'No'
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360cd'),
+    name: { first: 'Liza', last: 'Bordelon' },
+    gender: 'F',
+    yearOfBirth: 1971,
+    livesIn: 'Minneapolis',
+    countriesVisited: [ 'United States of America', 'Canada' ],
+    languages: [
+      { name: 'English', proficiency: 'Fluent' },
+      { name: 'French', proficiency: 'Fluent' },
+      { name: 'German', proficiency: 'Intermediate' },
+      { name: 'Greek', proficiency: 'Intermediate' },
+      { name: 'Latin', proficiency: 'Intermediate' },
+      { name: 'Sanskrit', proficiency: 'Beginner' }
+    ]
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360ce'),
+    name: { first: 'Jenny', last: 'Jones' },
+    gender: 'F',
+    yearOfBirth: 1985,
+    livesIn: 'Oxford',
+    countriesVisited: [ 'United Kingdom' ],
+    languages: [ { name: 'English', proficiency: 'Fluent' } ],
+    married: 'No'
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360cf'),
+    name: { first: 'Sapna', last: 'Chetri' },
+    gender: 'F',
+    yearOfBirth: 1989,
+    livesIn: 'Siliguri',
+    countriesVisited: [ 'India' ],
+    languages: [
+      { name: 'Nepali', proficiency: 'Fluent' },
+      { name: 'Hindi', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Intermediate' }
+    ],
+    married: 'No'
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360d0'),
+    name: { first: 'Jenny', middle: 'H', last: 'Jones' },
+    gender: 'F',
+    yearOfBirth: 1988,
+    livesIn: 'London',
+    countriesVisited: [ 'United Kingdom' ],
+    languages: [ { name: 'English', proficiency: 'Fluent' } ],
+    married: 'Yes'
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360d1'),
+    name: { first: 'Lakhpa', last: 'Sherpa' },
+    gender: 'M',
+    yearOfBirth: 1989,
+    lievsIn: 'Gangtok',
+    countriesVisited: [ 'India' ],
+    languages: [
+      { name: 'Nepali', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Fluent' },
+      { name: 'Hindi', proficiency: 'Intermediate' }
+    ],
+    married: 'No'
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360d2'),
+    name: { first: 'Anita', last: 'Gogia' },
+    gender: 'F',
+    yearOfBirth: 1965,
+    livesIn: 'New Delhi',
+    countriesVisited: [ 'India', 'United Kingdom', 'Canada', 'United States of America' ],
+    languages: [
+      { name: 'Hindi', proficiency: 'Fluent' },
+      { name: 'Punjabi', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Fluent' }
+    ],
+    married: 'Yes'
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360d3'),
+    name: { first: 'Neeharika', last: 'Chauhan' },
+    gender: 'F',
+    yearOfBirth: 1988,
+    livesIn: 'Jaipur',
+    countriesVisited: [ 'India' ],
+    languages: [
+      { name: 'Hindi', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Intermediate' }
+    ],
+    married: 'No'
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360d4'),
+    name: { first: 'Nancy', last: 'Karin' },
+    gender: 'F',
+    yearOfBirth: 1992,
+    livesIn: 'Montreal',
+    countriesVisited: [ 'Canada', 'United States of America' ],
+    languages: [
+      { name: 'English', proficiency: 'Fluent' },
+      { name: 'French', proficiency: 'Fluent' },
+      { name: 'German', proficiency: 'Intermediate' },
+      { name: 'Greek', proficiency: 'Intermediate' },
+      { name: 'Latin', proficiency: 'Intermediate' },
+      { name: 'Sanskrit', proficiency: 'Beginner' }
+    ]
+  }
+]
+cdac> db.persons.find({name:'Nancy'}).pretty()
+
+cdac> db.persons.countDocuments()
+14
+cdac> db.persons.find().forEach(printjson)
+{
+  _id: ObjectId('6ad407c09a1247cb716360c7'),
+  name: {
+    first: 'Harish',
+    last: 'Chandra'
+  },
+  gender: 'M',
+  yearOfBirth: 1962,
+  livesIn: 'Mumbai',
+  countriesVisited: [
+    'India',
+    'Singapore',
+    'Thailand',
+    'United Kingdom',
+    'Spain',
+    'Denmark',
+    'United States of America'
+  ],
+  languages: [
+    {
+      name: 'Hindi',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'English',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'Sanskrit',
+      proficiency: 'Intermediate'
+    }
+  ]
+}
+{
+  _id: ObjectId('6ad407c09a1247cb716360c8'),
+  name: {
+    first: 'Zoa',
+    last: 'Hendrik'
+  },
+  gender: 'F',
+  yearOfBirth: 1988,
+  livesIn: 'Barcelona',
+  countriesVisited: [
+    'Spain',
+    'Denmark',
+    'France'
+  ],
+  languages: [
+    {
+      name: 'Spanish',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'Catalan',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'English',
+      proficiency: 'Intermediate'
+    }
+  ],
+  married: 'No'
+}
+{
+  _id: ObjectId('6ad407c09a1247cb716360c9'),
+  name: {
+    first: 'Narayan',
+    last: 'Sundaram'
+  },
+  gender: 'M',
+  yearOfBirth: 1960,
+  livesIn: 'Jaipur',
+  counriesVisited: [
+    'India',
+    'United States of America',
+    'Netherlands',
+    'China'
+  ],
+  languages: [
+    {
+      name: 'Tamil',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'English',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'Hindi',
+      proficiency: 'Intermediate'
+    },
+    {
+      name: 'Chinese',
+      proficiency: 'Intermediate'
+    }
+  ],
+  married: 'Yes'
+}
+{
+  _id: ObjectId('6ad407c09a1247cb716360ca'),
+  name: {
+    first: 'Shailesh',
+    last: 'Sharma'
+  },
+  gender: 'M',
+  yearOfBirth: 1962,
+  livesIn: 'Singapore',
+  countriesVisited: [
+    'India',
+    'Singapore',
+    'China',
+    'Taiwan',
+    'United States of America',
+    'Sri Lanka',
+    'Mayalsia',
+    'Australia'
+  ],
+  languages: [
+    {
+      name: 'Hindi',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'English',
+      proficiency: 'Fluent'
+    }
+  ]
+}
+{
+  _id: ObjectId('6ad407c09a1247cb716360cb'),
+  name: {
+    first: 'Mark',
+    last: 'Smith'
+  },
+  gender: 'M',
+  livesIn: 'Chicago',
+  countriesVisited: [
+    'United States of America',
+    'Canada',
+    'France',
+    'Spain',
+    'India',
+    'Australia'
+  ],
+  languages: [
+    {
+      name: 'English',
+      proficiency: 'Fluent'
+    }
+  ]
+}
+{
+  _id: ObjectId('6ad407c09a1247cb716360cc'),
+  name: {
+    first: 'Rita',
+    last: 'Chauhan'
+  },
+  gender: 'F',
+  yearOfBirth: 1989,
+  livesIn: 'Mumbai',
+  countriesVisited: [
+    'India'
+  ],
+  languages: [
+    {
+      name: 'Hindi',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'English',
+      proficiency: 'Fluent'
+    }
+  ],
+  married: 'No'
+}
+{
+  _id: ObjectId('6ad407c09a1247cb716360cd'),
+  name: {
+    first: 'Liza',
+    last: 'Bordelon'
+  },
+  gender: 'F',
+  yearOfBirth: 1971,
+  livesIn: 'Minneapolis',
+  countriesVisited: [
+    'United States of America',
+    'Canada'
+  ],
+  languages: [
+    {
+      name: 'English',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'French',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'German',
+      proficiency: 'Intermediate'
+    },
+    {
+      name: 'Greek',
+      proficiency: 'Intermediate'
+    },
+    {
+      name: 'Latin',
+      proficiency: 'Intermediate'
+    },
+    {
+      name: 'Sanskrit',
+      proficiency: 'Beginner'
+    }
+  ]
+}
+{
+  _id: ObjectId('6ad407c09a1247cb716360ce'),
+  name: {
+    first: 'Jenny',
+    last: 'Jones'
+  },
+  gender: 'F',
+  yearOfBirth: 1985,
+  livesIn: 'Oxford',
+  countriesVisited: [
+    'United Kingdom'
+  ],
+  languages: [
+    {
+      name: 'English',
+      proficiency: 'Fluent'
+    }
+  ],
+  married: 'No'
+}
+{
+  _id: ObjectId('6ad407c09a1247cb716360cf'),
+  name: {
+    first: 'Sapna',
+    last: 'Chetri'
+  },
+  gender: 'F',
+  yearOfBirth: 1989,
+  livesIn: 'Siliguri',
+  countriesVisited: [
+    'India'
+  ],
+  languages: [
+    {
+      name: 'Nepali',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'Hindi',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'English',
+      proficiency: 'Intermediate'
+    }
+  ],
+  married: 'No'
+}
+{
+  _id: ObjectId('6ad407c09a1247cb716360d0'),
+  name: {
+    first: 'Jenny',
+    middle: 'H',
+    last: 'Jones'
+  },
+  gender: 'F',
+  yearOfBirth: 1988,
+  livesIn: 'London',
+  countriesVisited: [
+    'United Kingdom'
+  ],
+  languages: [
+    {
+      name: 'English',
+      proficiency: 'Fluent'
+    }
+  ],
+  married: 'Yes'
+}
+{
+  _id: ObjectId('6ad407c09a1247cb716360d1'),
+  name: {
+    first: 'Lakhpa',
+    last: 'Sherpa'
+  },
+  gender: 'M',
+  yearOfBirth: 1989,
+  lievsIn: 'Gangtok',
+  countriesVisited: [
+    'India'
+  ],
+  languages: [
+    {
+      name: 'Nepali',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'English',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'Hindi',
+      proficiency: 'Intermediate'
+    }
+  ],
+  married: 'No'
+}
+{
+  _id: ObjectId('6ad407c09a1247cb716360d2'),
+  name: {
+    first: 'Anita',
+    last: 'Gogia'
+  },
+  gender: 'F',
+  yearOfBirth: 1965,
+  livesIn: 'New Delhi',
+  countriesVisited: [
+    'India',
+    'United Kingdom',
+    'Canada',
+    'United States of America'
+  ],
+  languages: [
+    {
+      name: 'Hindi',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'Punjabi',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'English',
+      proficiency: 'Fluent'
+    }
+  ],
+  married: 'Yes'
+}
+{
+  _id: ObjectId('6ad407c09a1247cb716360d3'),
+  name: {
+    first: 'Neeharika',
+    last: 'Chauhan'
+  },
+  gender: 'F',
+  yearOfBirth: 1988,
+  livesIn: 'Jaipur',
+  countriesVisited: [
+    'India'
+  ],
+  languages: [
+    {
+      name: 'Hindi',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'English',
+      proficiency: 'Intermediate'
+    }
+  ],
+  married: 'No'
+}
+{
+  _id: ObjectId('6ad407c09a1247cb716360d4'),
+  name: {
+    first: 'Nancy',
+    last: 'Karin'
+  },
+  gender: 'F',
+  yearOfBirth: 1992,
+  livesIn: 'Montreal',
+  countriesVisited: [
+    'Canada',
+    'United States of America'
+  ],
+  languages: [
+    {
+      name: 'English',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'French',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'German',
+      proficiency: 'Intermediate'
+    },
+    {
+      name: 'Greek',
+      proficiency: 'Intermediate'
+    },
+    {
+      name: 'Latin',
+      proficiency: 'Intermediate'
+    },
+    {
+      name: 'Sanskrit',
+      proficiency: 'Beginner'
+    }
+  ]
+}
+
+cdac> db.persons.find({gender:'F'})
+[
+  {
+    _id: ObjectId('6ad407c09a1247cb716360c8'),
+    name: { first: 'Zoa', last: 'Hendrik' },
+    gender: 'F',
+    yearOfBirth: 1988,
+    livesIn: 'Barcelona',
+    countriesVisited: [ 'Spain', 'Denmark', 'France' ],
+    languages: [
+      { name: 'Spanish', proficiency: 'Fluent' },
+      { name: 'Catalan', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Intermediate' }
+    ],
+    married: 'No'
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360cc'),
+    name: { first: 'Rita', last: 'Chauhan' },
+    gender: 'F',
+    yearOfBirth: 1989,
+    livesIn: 'Mumbai',
+    countriesVisited: [ 'India' ],
+    languages: [
+      { name: 'Hindi', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Fluent' }
+    ],
+    married: 'No'
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360cd'),
+    name: { first: 'Liza', last: 'Bordelon' },
+    gender: 'F',
+    yearOfBirth: 1971,
+    livesIn: 'Minneapolis',
+    countriesVisited: [ 'United States of America', 'Canada' ],
+    languages: [
+      { name: 'English', proficiency: 'Fluent' },
+      { name: 'French', proficiency: 'Fluent' },
+      { name: 'German', proficiency: 'Intermediate' },
+      { name: 'Greek', proficiency: 'Intermediate' },
+      { name: 'Latin', proficiency: 'Intermediate' },
+      { name: 'Sanskrit', proficiency: 'Beginner' }
+    ]
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360ce'),
+    name: { first: 'Jenny', last: 'Jones' },
+    gender: 'F',
+    yearOfBirth: 1985,
+    livesIn: 'Oxford',
+    countriesVisited: [ 'United Kingdom' ],
+    languages: [ { name: 'English', proficiency: 'Fluent' } ],
+    married: 'No'
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360cf'),
+    name: { first: 'Sapna', last: 'Chetri' },
+    gender: 'F',
+    yearOfBirth: 1989,
+    livesIn: 'Siliguri',
+    countriesVisited: [ 'India' ],
+    languages: [
+      { name: 'Nepali', proficiency: 'Fluent' },
+      { name: 'Hindi', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Intermediate' }
+    ],
+    married: 'No'
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360d0'),
+    name: { first: 'Jenny', middle: 'H', last: 'Jones' },
+    gender: 'F',
+    yearOfBirth: 1988,
+    livesIn: 'London',
+    countriesVisited: [ 'United Kingdom' ],
+    languages: [ { name: 'English', proficiency: 'Fluent' } ],
+    married: 'Yes'
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360d2'),
+    name: { first: 'Anita', last: 'Gogia' },
+    gender: 'F',
+    yearOfBirth: 1965,
+    livesIn: 'New Delhi',
+    countriesVisited: [ 'India', 'United Kingdom', 'Canada', 'United States of America' ],
+    languages: [
+      { name: 'Hindi', proficiency: 'Fluent' },
+      { name: 'Punjabi', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Fluent' }
+    ],
+    married: 'Yes'
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360d3'),
+    name: { first: 'Neeharika', last: 'Chauhan' },
+    gender: 'F',
+    yearOfBirth: 1988,
+    livesIn: 'Jaipur',
+    countriesVisited: [ 'India' ],
+    languages: [
+      { name: 'Hindi', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Intermediate' }
+    ],
+    married: 'No'
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360d4'),
+    name: { first: 'Nancy', last: 'Karin' },
+    gender: 'F',
+    yearOfBirth: 1992,
+    livesIn: 'Montreal',
+    countriesVisited: [ 'Canada', 'United States of America' ],
+    languages: [
+      { name: 'English', proficiency: 'Fluent' },
+      { name: 'French', proficiency: 'Fluent' },
+      { name: 'German', proficiency: 'Intermediate' },
+      { name: 'Greek', proficiency: 'Intermediate' },
+      { name: 'Latin', proficiency: 'Intermediate' },
+      { name: 'Sanskrit', proficiency: 'Beginner' }
+    ]
+  }
+]
+cdac> db.persons.find({gender:'F'}).count()
+9
+cdac> db.persons.find({gender:'M'}).count()
+5
+cdac> db.persons.find().forEach(printjson)
+{
+  _id: ObjectId('6ad407c09a1247cb716360c7'),
+  name: {
+    first: 'Harish',
+    last: 'Chandra'
+  },
+  gender: 'M',
+  yearOfBirth: 1962,
+  livesIn: 'Mumbai',
+  countriesVisited: [
+    'India',
+    'Singapore',
+    'Thailand',
+    'United Kingdom',
+    'Spain',
+    'Denmark',
+    'United States of America'
+  ],
+  languages: [
+    {
+      name: 'Hindi',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'English',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'Sanskrit',
+      proficiency: 'Intermediate'
+    }
+  ]
+}
+{
+  _id: ObjectId('6ad407c09a1247cb716360c8'),
+  name: {
+    first: 'Zoa',
+    last: 'Hendrik'
+  },
+  gender: 'F',
+  yearOfBirth: 1988,
+  livesIn: 'Barcelona',
+  countriesVisited: [
+    'Spain',
+    'Denmark',
+    'France'
+  ],
+  languages: [
+    {
+      name: 'Spanish',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'Catalan',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'English',
+      proficiency: 'Intermediate'
+    }
+  ],
+  married: 'No'
+}
+{
+  _id: ObjectId('6ad407c09a1247cb716360c9'),
+  name: {
+    first: 'Narayan',
+    last: 'Sundaram'
+  },
+  gender: 'M',
+  yearOfBirth: 1960,
+  livesIn: 'Jaipur',
+  counriesVisited: [
+    'India',
+    'United States of America',
+    'Netherlands',
+    'China'
+  ],
+  languages: [
+    {
+      name: 'Tamil',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'English',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'Hindi',
+      proficiency: 'Intermediate'
+    },
+    {
+      name: 'Chinese',
+      proficiency: 'Intermediate'
+    }
+  ],
+  married: 'Yes'
+}
+{
+  _id: ObjectId('6ad407c09a1247cb716360ca'),
+  name: {
+    first: 'Shailesh',
+    last: 'Sharma'
+  },
+  gender: 'M',
+  yearOfBirth: 1962,
+  livesIn: 'Singapore',
+  countriesVisited: [
+    'India',
+    'Singapore',
+    'China',
+    'Taiwan',
+    'United States of America',
+    'Sri Lanka',
+    'Mayalsia',
+    'Australia'
+  ],
+  languages: [
+    {
+      name: 'Hindi',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'English',
+      proficiency: 'Fluent'
+    }
+  ]
+}
+{
+  _id: ObjectId('6ad407c09a1247cb716360cb'),
+  name: {
+    first: 'Mark',
+    last: 'Smith'
+  },
+  gender: 'M',
+  livesIn: 'Chicago',
+  countriesVisited: [
+    'United States of America',
+    'Canada',
+    'France',
+    'Spain',
+    'India',
+    'Australia'
+  ],
+  languages: [
+    {
+      name: 'English',
+      proficiency: 'Fluent'
+    }
+  ]
+}
+{
+  _id: ObjectId('6ad407c09a1247cb716360cc'),
+  name: {
+    first: 'Rita',
+    last: 'Chauhan'
+  },
+  gender: 'F',
+  yearOfBirth: 1989,
+  livesIn: 'Mumbai',
+  countriesVisited: [
+    'India'
+  ],
+  languages: [
+    {
+      name: 'Hindi',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'English',
+      proficiency: 'Fluent'
+    }
+  ],
+  married: 'No'
+}
+{
+  _id: ObjectId('6ad407c09a1247cb716360cd'),
+  name: {
+    first: 'Liza',
+    last: 'Bordelon'
+  },
+  gender: 'F',
+  yearOfBirth: 1971,
+  livesIn: 'Minneapolis',
+  countriesVisited: [
+    'United States of America',
+    'Canada'
+  ],
+  languages: [
+    {
+      name: 'English',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'French',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'German',
+      proficiency: 'Intermediate'
+    },
+    {
+      name: 'Greek',
+      proficiency: 'Intermediate'
+    },
+    {
+      name: 'Latin',
+      proficiency: 'Intermediate'
+    },
+    {
+      name: 'Sanskrit',
+      proficiency: 'Beginner'
+    }
+  ]
+}
+{
+  _id: ObjectId('6ad407c09a1247cb716360ce'),
+  name: {
+    first: 'Jenny',
+    last: 'Jones'
+  },
+  gender: 'F',
+  yearOfBirth: 1985,
+  livesIn: 'Oxford',
+  countriesVisited: [
+    'United Kingdom'
+  ],
+  languages: [
+    {
+      name: 'English',
+      proficiency: 'Fluent'
+    }
+  ],
+  married: 'No'
+}
+{
+  _id: ObjectId('6ad407c09a1247cb716360cf'),
+  name: {
+    first: 'Sapna',
+    last: 'Chetri'
+  },
+  gender: 'F',
+  yearOfBirth: 1989,
+  livesIn: 'Siliguri',
+  countriesVisited: [
+    'India'
+  ],
+  languages: [
+    {
+      name: 'Nepali',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'Hindi',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'English',
+      proficiency: 'Intermediate'
+    }
+  ],
+  married: 'No'
+}
+{
+  _id: ObjectId('6ad407c09a1247cb716360d0'),
+  name: {
+    first: 'Jenny',
+    middle: 'H',
+    last: 'Jones'
+  },
+  gender: 'F',
+  yearOfBirth: 1988,
+  livesIn: 'London',
+  countriesVisited: [
+    'United Kingdom'
+  ],
+  languages: [
+    {
+      name: 'English',
+      proficiency: 'Fluent'
+    }
+  ],
+  married: 'Yes'
+}
+{
+  _id: ObjectId('6ad407c09a1247cb716360d1'),
+  name: {
+    first: 'Lakhpa',
+    last: 'Sherpa'
+  },
+  gender: 'M',
+  yearOfBirth: 1989,
+  lievsIn: 'Gangtok',
+  countriesVisited: [
+    'India'
+  ],
+  languages: [
+    {
+      name: 'Nepali',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'English',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'Hindi',
+      proficiency: 'Intermediate'
+    }
+  ],
+  married: 'No'
+}
+{
+  _id: ObjectId('6ad407c09a1247cb716360d2'),
+  name: {
+    first: 'Anita',
+    last: 'Gogia'
+  },
+  gender: 'F',
+  yearOfBirth: 1965,
+  livesIn: 'New Delhi',
+  countriesVisited: [
+    'India',
+    'United Kingdom',
+    'Canada',
+    'United States of America'
+  ],
+  languages: [
+    {
+      name: 'Hindi',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'Punjabi',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'English',
+      proficiency: 'Fluent'
+    }
+  ],
+  married: 'Yes'
+}
+{
+  _id: ObjectId('6ad407c09a1247cb716360d3'),
+  name: {
+    first: 'Neeharika',
+    last: 'Chauhan'
+  },
+  gender: 'F',
+  yearOfBirth: 1988,
+  livesIn: 'Jaipur',
+  countriesVisited: [
+    'India'
+  ],
+  languages: [
+    {
+      name: 'Hindi',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'English',
+      proficiency: 'Intermediate'
+    }
+  ],
+  married: 'No'
+}
+{
+  _id: ObjectId('6ad407c09a1247cb716360d4'),
+  name: {
+    first: 'Nancy',
+    last: 'Karin'
+  },
+  gender: 'F',
+  yearOfBirth: 1992,
+  livesIn: 'Montreal',
+  countriesVisited: [
+    'Canada',
+    'United States of America'
+  ],
+  languages: [
+    {
+      name: 'English',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'French',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'German',
+      proficiency: 'Intermediate'
+    },
+    {
+      name: 'Greek',
+      proficiency: 'Intermediate'
+    },
+    {
+      name: 'Latin',
+      proficiency: 'Intermediate'
+    },
+    {
+      name: 'Sanskrit',
+      proficiency: 'Beginner'
+    }
+  ]
+}
+
+cdac> db.persons.find({gender:'M'}).forEach(printjson)
+{
+  _id: ObjectId('6ad407c09a1247cb716360c7'),
+  name: {
+    first: 'Harish',
+    last: 'Chandra'
+  },
+  gender: 'M',
+  yearOfBirth: 1962,
+  livesIn: 'Mumbai',
+  countriesVisited: [
+    'India',
+    'Singapore',
+    'Thailand',
+    'United Kingdom',
+    'Spain',
+    'Denmark',
+    'United States of America'
+  ],
+  languages: [
+    {
+      name: 'Hindi',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'English',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'Sanskrit',
+      proficiency: 'Intermediate'
+    }
+  ]
+}
+{
+  _id: ObjectId('6ad407c09a1247cb716360c9'),
+  name: {
+    first: 'Narayan',
+    last: 'Sundaram'
+  },
+  gender: 'M',
+  yearOfBirth: 1960,
+  livesIn: 'Jaipur',
+  counriesVisited: [
+    'India',
+    'United States of America',
+    'Netherlands',
+    'China'
+  ],
+  languages: [
+    {
+      name: 'Tamil',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'English',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'Hindi',
+      proficiency: 'Intermediate'
+    },
+    {
+      name: 'Chinese',
+      proficiency: 'Intermediate'
+    }
+  ],
+  married: 'Yes'
+}
+{
+  _id: ObjectId('6ad407c09a1247cb716360ca'),
+  name: {
+    first: 'Shailesh',
+    last: 'Sharma'
+  },
+  gender: 'M',
+  yearOfBirth: 1962,
+  livesIn: 'Singapore',
+  countriesVisited: [
+    'India',
+    'Singapore',
+    'China',
+    'Taiwan',
+    'United States of America',
+    'Sri Lanka',
+    'Mayalsia',
+    'Australia'
+  ],
+  languages: [
+    {
+      name: 'Hindi',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'English',
+      proficiency: 'Fluent'
+    }
+  ]
+}
+{
+  _id: ObjectId('6ad407c09a1247cb716360cb'),
+  name: {
+    first: 'Mark',
+    last: 'Smith'
+  },
+  gender: 'M',
+  livesIn: 'Chicago',
+  countriesVisited: [
+    'United States of America',
+    'Canada',
+    'France',
+    'Spain',
+    'India',
+    'Australia'
+  ],
+  languages: [
+    {
+      name: 'English',
+      proficiency: 'Fluent'
+    }
+  ]
+}
+{
+  _id: ObjectId('6ad407c09a1247cb716360d1'),
+  name: {
+    first: 'Lakhpa',
+    last: 'Sherpa'
+  },
+  gender: 'M',
+  yearOfBirth: 1989,
+  lievsIn: 'Gangtok',
+  countriesVisited: [
+    'India'
+  ],
+  languages: [
+    {
+      name: 'Nepali',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'English',
+      proficiency: 'Fluent'
+    },
+    {
+      name: 'Hindi',
+      proficiency: 'Intermediate'
+    }
+  ],
+  married: 'No'
+}
+
+cdac> db.persons.find({livesIn:'London'})
+[
+  {
+    _id: ObjectId('6ad407c09a1247cb716360d0'),
+    name: { first: 'Jenny', middle: 'H', last: 'Jones' },
+    gender: 'F',
+    yearOfBirth: 1988,
+    livesIn: 'London',
+    countriesVisited: [ 'United Kingdom' ],
+    languages: [ { name: 'English', proficiency: 'Fluent' } ],
+    married: 'Yes'
+  }
+]
+cdac> db.persons.find({livesIn:'London',_id:0})
+
+cdac> db.persons.find({livesIn:'London'}),({_id:0})
+{ _id: 0 }
+cdac> db.persons.find({livesIn:'London'})
+[
+  {
+    _id: ObjectId('6ad407c09a1247cb716360d0'),
+    name: { first: 'Jenny', middle: 'H', last: 'Jones' },
+    gender: 'F',
+    yearOfBirth: 1988,
+    livesIn: 'London',
+    countriesVisited: [ 'United Kingdom' ],
+    languages: [ { name: 'English', proficiency: 'Fluent' } ],
+    married: 'Yes'
+  }
+]
+cdac> db.persons.remove({gender:'M'})
+{ acknowledged: true, deletedCount: 5 }
+cdac> db.persons.find({gender:'M'})
+
+cdac> db.persons.find({gender:'M'}).count()
+0
+cdac> db.persons.remove({livesIn:'jaipur'})
+{ acknowledged: true, deletedCount: 0 }
+cdac> db.person.find({livesIn:'jaipur'})
+
+cdac> db.person.find({livesIn:'jaipur'}).count()
+0
+cdac> db.persons({gender:'F'},{name:1,_id:0})
+TypeError: db.persons is not a function
+cdac> db.persons.find({gender:'F'},{name:1,_id:0})
+[
+  { name: { first: 'Zoa', last: 'Hendrik' } },
+  { name: { first: 'Rita', last: 'Chauhan' } },
+  { name: { first: 'Liza', last: 'Bordelon' } },
+  { name: { first: 'Jenny', last: 'Jones' } },
+  { name: { first: 'Sapna', last: 'Chetri' } },
+  { name: { first: 'Jenny', middle: 'H', last: 'Jones' } },
+  { name: { first: 'Anita', last: 'Gogia' } },
+  { name: { first: 'Neeharika', last: 'Chauhan' } },
+  { name: { first: 'Nancy', last: 'Karin' } }
+]
+cdac> db.person.find({gender:'M'},{name:1,livesIn:1,_id:0})
+
+cdac> show collections
+dept
+emp
+friends
+persons
+cdac> db.person.find({gender:'M'},{name:1,livesIn:1,_id:0})
+
+cdac> db.person.find({gender:'F'},{name:1,livesIn:1,_id:0})
+
+cdac> db.person.find({gender:'Nancy'},{name:1,livesIn:1,_id:0})
+
+cdac> db.persons.find({'name.first':'nancy'},{name:1,livesIn:1,_id:0})
+
+cdac> db.persons.find({'name.first':'Neeharika''},{name:1,livesIn:1,_id:0})
+Uncaught:
+SyntaxError: Unterminated string constant. (1:41)
+
+> 1 | db.persons.find({'name.first':'Neeharika''},{name:1,livesIn:1,_id:0})
+    |                                          ^
+  2 |
+
+cdac> db.persons.find({'name.first':'Neeharika'},{name:1,livesIn:1,_id:0})
+[
+  { name: { first: 'Neeharika', last: 'Chauhan' }, livesIn: 'Jaipur' }
+]
+cdac> db.person.find({'name.first':'nancy'},{name:1,livesIn:1,_id:0})
+
+cdac> db.person.find({'name.first':'anita'},{name:1,livesIn:1,_id:0})
+
+cdac> db.person.find({'name.first':'anita'},{name:1,livesIn:1,_id:0})
+cdac> db.persons.find({gender:'F'},{name:1,_id:0,livesIn:1,countriesVisited:1})
+[
+  {
+    name: { first: 'Zoa', last: 'Hendrik' },
+    livesIn: 'Barcelona',
+    countriesVisited: [ 'Spain', 'Denmark', 'France' ]
+  },
+  {
+    name: { first: 'Rita', last: 'Chauhan' },
+    livesIn: 'Mumbai',
+    countriesVisited: [ 'India' ]
+  },
+  {
+    name: { first: 'Liza', last: 'Bordelon' },
+    livesIn: 'Minneapolis',
+    countriesVisited: [ 'United States of America', 'Canada' ]
+  },
+  {
+    name: { first: 'Jenny', last: 'Jones' },
+    livesIn: 'Oxford',
+    countriesVisited: [ 'United Kingdom' ]
+  },
+  {
+    name: { first: 'Sapna', last: 'Chetri' },
+    livesIn: 'Siliguri',
+    countriesVisited: [ 'India' ]
+  },
+  {
+    name: { first: 'Jenny', middle: 'H', last: 'Jones' },
+    livesIn: 'London',
+    countriesVisited: [ 'United Kingdom' ]
+  },
+  {
+    name: { first: 'Anita', last: 'Gogia' },
+    livesIn: 'New Delhi',
+    countriesVisited: [ 'India', 'United Kingdom', 'Canada', 'United States of America' ]
+  },
+  {
+    name: { first: 'Neeharika', last: 'Chauhan' },
+    livesIn: 'Jaipur',
+    countriesVisited: [ 'India' ]
+  },
+  {
+    name: { first: 'Nancy', last: 'Karin' },
+    livesIn: 'Montreal',
+    countriesVisited: [ 'Canada', 'United States of America' ]
+  }
+]
+cdac> db.persons.find({gender:'F'},{name:1,_id:0,countriesVisited:1}).count()
+9
+cdac> db.persons.find({gender:'F',name:'nancy'},{name:1,_id:0,countriesVisited:1})
+
+cdac> db.persons.find({gender:'F',name.first:'nancy'},{name:1,_id:0,})
+Uncaught:
+SyntaxError: Unexpected token, expected "," (1:32)
+
+> 1 | db.persons.find({gender:'F',name.first:'nancy'},{name:1,_id:0,})
+    |                                 ^
+  2 |
+
+cdac> db.person.find({gender:'F','name.first:nancy'},{name:1,_id:0})
+Uncaught:
+SyntaxError: Unexpected token (1:45)
+
+> 1 | db.person.find({gender:'F','name.first:nancy'},{name:1,_id:0})
+    |                                              ^
+  2 |
+
+cdac> db.person.find({gender:'F','name.first':'nancy'},{name:1,_id:0})
+
+cdac> db.person.finf({gender:'F','name.first':'Nancy'},{name:1,_id:0})
+TypeError: db.person.finf is not a function
+cdac> db.person.find({gender:'F','name.first':'Nancy'},{name:1,_id:0})
+
+cdac> db.persons.find({gender:'F',name.first:'nancy'},{name:1,_id:0,})
+Uncaught:
+SyntaxError: Unexpected token, expected "," (1:32)
+
+> 1 | db.persons.find({gender:'F',name.first:'nancy'},{name:1,_id:0,})
+    |                                 ^
+  2 |
+
+cdac> db.persons.find({gender:'F','name.first':'nancy'},{name:1,_id:0,})
+
+cdac> db.persons.find({'name.first':'Nancy'})
+[
+  {
+    _id: ObjectId('6ad407c09a1247cb716360d4'),
+    name: { first: 'Nancy', last: 'Karin' },
+    gender: 'F',
+    yearOfBirth: 1992,
+    livesIn: 'Montreal',
+    countriesVisited: [ 'Canada', 'United States of America' ],
+    languages: [
+      { name: 'English', proficiency: 'Fluent' },
+      { name: 'French', proficiency: 'Fluent' },
+      { name: 'German', proficiency: 'Intermediate' },
+      { name: 'Greek', proficiency: 'Intermediate' },
+      { name: 'Latin', proficiency: 'Intermediate' },
+      { name: 'Sanskrit', proficiency: 'Beginner' }
+    ]
+  }
+]
+cdac> db.persons.find({'name.first':'Nancy'},{name:1,_id:0})
+[ { name: { first: 'Nancy', last: 'Karin' } } ]
+cdac> db.persons.find({'name.first':'Nancy'},{name:1,_id:0,languages:1})
+[
+  {
+    name: { first: 'Nancy', last: 'Karin' },
+    languages: [
+      { name: 'English', proficiency: 'Fluent' },
+      { name: 'French', proficiency: 'Fluent' },
+      { name: 'German', proficiency: 'Intermediate' },
+      { name: 'Greek', proficiency: 'Intermediate' },
+      { name: 'Latin', proficiency: 'Intermediate' },
+      { name: 'Sanskrit', proficiency: 'Beginner' }
+    ]
+  }
+]
+cdac> db.persons.find({gender:'F'},{name:1,_id:0,yearOfBirth:1,languages:1}).sort({name:-1})
+[
+  {
+    name: { first: 'Zoa', last: 'Hendrik' },
+    yearOfBirth: 1988,
+    languages: [
+      { name: 'Spanish', proficiency: 'Fluent' },
+      { name: 'Catalan', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Intermediate' }
+    ]
+  },
+  {
+    name: { first: 'Sapna', last: 'Chetri' },
+    yearOfBirth: 1989,
+    languages: [
+      { name: 'Nepali', proficiency: 'Fluent' },
+      { name: 'Hindi', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Intermediate' }
+    ]
+  },
+  {
+    name: { first: 'Rita', last: 'Chauhan' },
+    yearOfBirth: 1989,
+    languages: [
+      { name: 'Hindi', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Fluent' }
+    ]
+  },
+  {
+    name: { first: 'Neeharika', last: 'Chauhan' },
+    yearOfBirth: 1988,
+    languages: [
+      { name: 'Hindi', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Intermediate' }
+    ]
+  },
+  {
+    name: { first: 'Nancy', last: 'Karin' },
+    yearOfBirth: 1992,
+    languages: [
+      { name: 'English', proficiency: 'Fluent' },
+      { name: 'French', proficiency: 'Fluent' },
+      { name: 'German', proficiency: 'Intermediate' },
+      { name: 'Greek', proficiency: 'Intermediate' },
+      { name: 'Latin', proficiency: 'Intermediate' },
+      { name: 'Sanskrit', proficiency: 'Beginner' }
+    ]
+  },
+  {
+    name: { first: 'Liza', last: 'Bordelon' },
+    yearOfBirth: 1971,
+    languages: [
+      { name: 'English', proficiency: 'Fluent' },
+      { name: 'French', proficiency: 'Fluent' },
+      { name: 'German', proficiency: 'Intermediate' },
+      { name: 'Greek', proficiency: 'Intermediate' },
+      { name: 'Latin', proficiency: 'Intermediate' },
+      { name: 'Sanskrit', proficiency: 'Beginner' }
+    ]
+  },
+  {
+    name: { first: 'Jenny', middle: 'H', last: 'Jones' },
+    yearOfBirth: 1988,
+    languages: [ { name: 'English', proficiency: 'Fluent' } ]
+  },
+  {
+    name: { first: 'Jenny', last: 'Jones' },
+    yearOfBirth: 1985,
+    languages: [ { name: 'English', proficiency: 'Fluent' } ]
+  },
+  {
+    name: { first: 'Anita', last: 'Gogia' },
+    yearOfBirth: 1965,
+    languages: [
+      { name: 'Hindi', proficiency: 'Fluent' },
+      { name: 'Punjabi', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Fluent' }
+    ]
+  }
+]
+cdac> db.persons.find({gender:'F'},{name:1,_id:0,yearOfBirth:1,languages:1}).sort({name:1})
+[
+  {
+    name: { first: 'Anita', last: 'Gogia' },
+    yearOfBirth: 1965,
+    languages: [
+      { name: 'Hindi', proficiency: 'Fluent' },
+      { name: 'Punjabi', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Fluent' }
+    ]
+  },
+  {
+    name: { first: 'Jenny', last: 'Jones' },
+    yearOfBirth: 1985,
+    languages: [ { name: 'English', proficiency: 'Fluent' } ]
+  },
+  {
+    name: { first: 'Jenny', middle: 'H', last: 'Jones' },
+    yearOfBirth: 1988,
+    languages: [ { name: 'English', proficiency: 'Fluent' } ]
+  },
+  {
+    name: { first: 'Liza', last: 'Bordelon' },
+    yearOfBirth: 1971,
+    languages: [
+      { name: 'English', proficiency: 'Fluent' },
+      { name: 'French', proficiency: 'Fluent' },
+      { name: 'German', proficiency: 'Intermediate' },
+      { name: 'Greek', proficiency: 'Intermediate' },
+      { name: 'Latin', proficiency: 'Intermediate' },
+      { name: 'Sanskrit', proficiency: 'Beginner' }
+    ]
+  },
+  {
+    name: { first: 'Nancy', last: 'Karin' },
+    yearOfBirth: 1992,
+    languages: [
+      { name: 'English', proficiency: 'Fluent' },
+      { name: 'French', proficiency: 'Fluent' },
+      { name: 'German', proficiency: 'Intermediate' },
+      { name: 'Greek', proficiency: 'Intermediate' },
+      { name: 'Latin', proficiency: 'Intermediate' },
+      { name: 'Sanskrit', proficiency: 'Beginner' }
+    ]
+  },
+  {
+    name: { first: 'Neeharika', last: 'Chauhan' },
+    yearOfBirth: 1988,
+    languages: [
+      { name: 'Hindi', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Intermediate' }
+    ]
+  },
+  {
+    name: { first: 'Rita', last: 'Chauhan' },
+    yearOfBirth: 1989,
+    languages: [
+      { name: 'Hindi', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Fluent' }
+    ]
+  },
+  {
+    name: { first: 'Sapna', last: 'Chetri' },
+    yearOfBirth: 1989,
+    languages: [
+      { name: 'Nepali', proficiency: 'Fluent' },
+      { name: 'Hindi', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Intermediate' }
+    ]
+  },
+  {
+    name: { first: 'Zoa', last: 'Hendrik' },
+    yearOfBirth: 1988,
+    languages: [
+      { name: 'Spanish', proficiency: 'Fluent' },
+      { name: 'Catalan', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Intermediate' }
+    ]
+  }
+]
+cdac> db.persons.find({livesIn:{$in=in:['Jaipur','Mumbai']}}).pretty()
+Uncaught:
+SyntaxError: Unexpected token (1:30)
+
+> 1 | db.persons.find({livesIn:{$in=in:['Jaipur','Mumbai']}}).pretty()
+    |                               ^
+  2 |
+
+cdac> db.persons.find({livesIn:{$in:['Jaipur','Mumbai']}}).pretty()
+[
+  {
+    _id: ObjectId('6ad407c09a1247cb716360cc'),
+    name: { first: 'Rita', last: 'Chauhan' },
+    gender: 'F',
+    yearOfBirth: 1989,
+    livesIn: 'Mumbai',
+    countriesVisited: [ 'India' ],
+    languages: [
+      { name: 'Hindi', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Fluent' }
+    ],
+    married: 'No'
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360d3'),
+    name: { first: 'Neeharika', last: 'Chauhan' },
+    gender: 'F',
+    yearOfBirth: 1988,
+    livesIn: 'Jaipur',
+    countriesVisited: [ 'India' ],
+    languages: [
+      { name: 'Hindi', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Intermediate' }
+    ],
+    married: 'No'
+  }
+]
+cdac> db.persons.find({livesIn:{$in:['Jaipur','Mumbai']}}).pretty()
+[
+  {
+    _id: ObjectId('6ad407c09a1247cb716360cc'),
+    name: { first: 'Rita', last: 'Chauhan' },
+    gender: 'F',
+    yearOfBirth: 1989,
+    livesIn: 'Mumbai',
+    countriesVisited: [ 'India' ],
+    languages: [
+      { name: 'Hindi', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Fluent' }
+    ],
+    married: 'No'
+  },
+  {
+    _id: ObjectId('6ad407c09a1247cb716360d3'),
+    name: { first: 'Neeharika', last: 'Chauhan' },
+    gender: 'F',
+    yearOfBirth: 1988,
+    livesIn: 'Jaipur',
+    countriesVisited: [ 'India' ],
+    languages: [
+      { name: 'Hindi', proficiency: 'Fluent' },
+      { name: 'English', proficiency: 'Intermediate' }
+    ],
+    married: 'No'
+  }
+]
+cdac> db.persons.find({yearOfBirth:{$lt:1988},{name:1,_id:0}})
+Uncaught:
+SyntaxError: Unexpected token (1:40)
+
+> 1 | db.persons.find({yearOfBirth:{$lt:1988},{name:1,_id:0}})
+    |                                         ^
+  2 |
+
+cdac> db.persons.find({yearOfBirth:{$lt:1988}},{name:1,_id:0})
+[
+  { name: { first: 'Liza', last: 'Bordelon' } },
+  { name: { first: 'Jenny', last: 'Jones' } },
+  { name: { first: 'Anita', last: 'Gogia' } }
+]
+cdac> db.persons.find({yearOfBirth:{$lt:1989}},{name:1,_id:0})
+[
+  { name: { first: 'Zoa', last: 'Hendrik' } },
+  { name: { first: 'Liza', last: 'Bordelon' } },
+  { name: { first: 'Jenny', last: 'Jones' } },
+  { name: { first: 'Jenny', middle: 'H', last: 'Jones' } },
+  { name: { first: 'Anita', last: 'Gogia' } },
+  { name: { first: 'Neeharika', last: 'Chauhan' } }
+]
+cdac> db.persons.find({yearOfBirth:{$gte:1989}},{name:1,_id:0})
+[
+  { name: { first: 'Rita', last: 'Chauhan' } },
+  { name: { first: 'Sapna', last: 'Chetri' } },
+  { name: { first: 'Nancy', last: 'Karin' } }
+]
+cdac> db.persons.find({livesIn:{$ne:'Jaipur'}},{name:1,_id:0,yearOfBirth:1})
+[
+  { name: { first: 'Zoa', last: 'Hendrik' }, yearOfBirth: 1988 },
+  { name: { first: 'Rita', last: 'Chauhan' }, yearOfBirth: 1989 },
+  { name: { first: 'Liza', last: 'Bordelon' }, yearOfBirth: 1971 },
+  { name: { first: 'Jenny', last: 'Jones' }, yearOfBirth: 1985 },
+  { name: { first: 'Sapna', last: 'Chetri' }, yearOfBirth: 1989 },
+  {
+    name: { first: 'Jenny', middle: 'H', last: 'Jones' },
+    yearOfBirth: 1988
+  },
+  { name: { first: 'Anita', last: 'Gogia' }, yearOfBirth: 1965 },
+  { name: { first: 'Nancy', last: 'Karin' }, yearOfBirth: 1992 }
+]
+cdac> db.persons.update({name:{first:'Nancy',last:'Karin'}},{$set:{married:'No'}})
+DeprecationWarning: Collection.update() is deprecated. Use updateOne, updateMany, or bulkWrite.
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+cdac> db.persons.find({'name.first':'Nancy'})
+[
+  {
+    _id: ObjectId('6ad407c09a1247cb716360d4'),
+    name: { first: 'Nancy', last: 'Karin' },
+    gender: 'F',
+    yearOfBirth: 1992,
+    livesIn: 'Montreal',
+    countriesVisited: [ 'Canada', 'United States of America' ],
+    languages: [
+      { name: 'English', proficiency: 'Fluent' },
+      { name: 'French', proficiency: 'Fluent' },
+      { name: 'German', proficiency: 'Intermediate' },
+      { name: 'Greek', proficiency: 'Intermediate' },
+      { name: 'Latin', proficiency: 'Intermediate' },
+      { name: 'Sanskrit', proficiency: 'Beginner' }
+    ],
+    married: 'No'
+  }
+]
+cdac> db.persons.update({name:{first:'Nancy',last:'Karin'}},{$set:{married:'Yes'}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+cdac> db.persons.find({'name.first':'Nancy'})
+[
+  {
+    _id: ObjectId('6ad407c09a1247cb716360d4'),
+    name: { first: 'Nancy', last: 'Karin' },
+    gender: 'F',
+    yearOfBirth: 1992,
+    livesIn: 'Montreal',
+    countriesVisited: [ 'Canada', 'United States of America' ],
+    languages: [
+      { name: 'English', proficiency: 'Fluent' },
+      { name: 'French', proficiency: 'Fluent' },
+      { name: 'German', proficiency: 'Intermediate' },
+      { name: 'Greek', proficiency: 'Intermediate' },
+      { name: 'Latin', proficiency: 'Intermediate' },
+      { name: 'Sanskrit', proficiency: 'Beginner' }
+    ],
+    married: 'Yes'
+  }
+]
+cdac> use db university
+switched to db db
+db> show db
+MongoshInvalidInputError: [COMMON-10001] 'db' is not a valid argument for "show".
+db> db
+db
+db> show collections
+
+db> db.university.insert({name:'Alice',sid:20,subject:'Computer Science'})
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId('6ad41be39a1247cb716360d5') }
+}
+db> db.university.find()
+[
+  {
+    _id: ObjectId('6ad41be39a1247cb716360d5'),
+    name: 'Alice',
+    sid: 20,
+    subject: 'Computer Science'
+  }
+]
+db> db.university.insert({name:'Bob',sid:22,subject:'Mathematics'})
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId('6ad41c209a1247cb716360d6') }
+}
+db> db.university.insert({name:'Charlie',sid:21,subject:'Physics'})
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId('6ad41c379a1247cb716360d7') }
+}
+db> db.university.find()
+[
+  {
+    _id: ObjectId('6ad41be39a1247cb716360d5'),
+    name: 'Alice',
+    sid: 20,
+    subject: 'Computer Science'
+  },
+  {
+    _id: ObjectId('6ad41c209a1247cb716360d6'),
+    name: 'Bob',
+    sid: 22,
+    subject: 'Mathematics'
+  },
+  {
+    _id: ObjectId('6ad41c379a1247cb716360d7'),
+    name: 'Charlie',
+    sid: 21,
+    subject: 'Physics'
+  }
+]
+db> db.university.find().count()
+3
+db> db.university.update({name:'Charlie'},{$set:{name:'Astronomy'}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db> db.university.find({name:'Charlie'})
+
+db> db.university.find({name:'Astronomy'})
+[
+  {
+    _id: ObjectId('6ad41c379a1247cb716360d7'),
+    name: 'Astronomy',
+    sid: 21,
+    subject: 'Physics'
+  }
+]
+db> db.university.deleteOne({name:'Bob'})
+{ acknowledged: true, deletedCount: 1 }
+db> db.univeristy.find()
+
+db> db.university.find()
+[
+  {
+    _id: ObjectId('6ad41be39a1247cb716360d5'),
+    name: 'Alice',
+    sid: 20,
+    subject: 'Computer Science'
+  },
+  {
+    _id: ObjectId('6ad41c379a1247cb716360d7'),
+    name: 'Astronomy',
+    sid: 21,
+    subject: 'Physics'
+  }
+]
+db> use university
+|
+| db.courses.insert({courseId:'CS101',name:'Computer Science',credits:3})
+| db.courses.insert({courseId:'MA202',name:'Mathematics',credits:4})
+| db.courses.insert({courseId:'PH301',name:'Physics',credits:3})
+|
+| db.courses.find()
+|
+| db.courses.update({courseId:'PH301'},{$set:{credits:4}})
+|
+| db.courses.deleteOne({courseId:'MA202'})
+|
+| db.courses.find()
+|
+switched to db university
+university> db.courses.find()
+
+university> v
+ReferenceError: v is not defined
+university> db.courses.insert({courseId:'CS101',name:'Computer Science',credits:3})
+|
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId('6ad41eaf9a1247cb716360d8') }
+}
+university> db.courses.insert({courseId:'MA202',name:'Mathematics',credits:4})
+|
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId('6ad41eb49a1247cb716360d9') }
+}
+university> db.courses.insert({courseId:'PH301',name:'Physics',credits:3})
+|
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId('6ad41eb99a1247cb716360da') }
+}
+university> db.courses.find()
+|
+[
+  {
+    _id: ObjectId('6ad41eaf9a1247cb716360d8'),
+    courseId: 'CS101',
+    name: 'Computer Science',
+    credits: 3
+  },
+  {
+    _id: ObjectId('6ad41eb49a1247cb716360d9'),
+    courseId: 'MA202',
+    name: 'Mathematics',
+    credits: 4
+  },
+  {
+    _id: ObjectId('6ad41eb99a1247cb716360da'),
+    courseId: 'PH301',
+    name: 'Physics',
+    credits: 3
+  }
+]
+university> db.courses.update({courseId:'PH301'},{$set:{credits:4}})
+|
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+university> db.courses.deleteOne({courseId:'MA202'})
+|
+{ acknowledged: true, deletedCount: 1 }
+university> db.courses.find()
+|
+[
+  {
+    _id: ObjectId('6ad41eaf9a1247cb716360d8'),
+    courseId: 'CS101',
+    name: 'Computer Science',
+    credits: 3
+  },
+  {
+    _id: ObjectId('6ad41eb99a1247cb716360da'),
+    courseId: 'PH301',
+    name: 'Physics',
+    credits: 4
+  }
+]
+university> use library
+|
+switched to db library
+library> db.books.insert({name:'1984',author:'George Orwell'})
+|
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId('6ad41ede9a1247cb716360db') }
+}
+library> db.books.insert({name:'To Kill a Mockingbird',author:'Harper Lee'})
+|
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId('6ad41ee29a1247cb716360dc') }
+}
+library> db.books.insert({name:'The Great Gatsby',author:'F. Scott Fitzgerald',year:1925})
+|
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId('6ad41ee69a1247cb716360dd') }
+}
+library> db.books.find()
+|
+[
+  {
+    _id: ObjectId('6ad41ede9a1247cb716360db'),
+    name: '1984',
+    author: 'George Orwell'
+  },
+  {
+    _id: ObjectId('6ad41ee29a1247cb716360dc'),
+    name: 'To Kill a Mockingbird',
+    author: 'Harper Lee'
+  },
+  {
+    _id: ObjectId('6ad41ee69a1247cb716360dd'),
+    name: 'The Great Gatsby',
+    author: 'F. Scott Fitzgerald',
+    year: 1925
+  }
+]
+library> db.books.update({name:'The Great Gatsby'},{$set:{year:1926}})
+|
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+library> db.books.deleteOne({name:'To Kill a Mockingbird'})
+|
+{ acknowledged: true, deletedCount: 1 }
+library> db.books.find()
+|
+[
+  {
+    _id: ObjectId('6ad41ede9a1247cb716360db'),
+    name: '1984',
+    author: 'George Orwell'
+  },
+  {
+    _id: ObjectId('6ad41ee69a1247cb716360dd'),
+    name: 'The Great Gatsby',
+    author: 'F. Scott Fitzgerald',
+    year: 1926
+  }
+]
+library> use company
+|
+switched to db company
+company> db.employees.insert({name:'John Doe',age:30,position:'Software Engineer'})
+|
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId('6ad41f029a1247cb716360de') }
+}
+company> db.employees.insert({name:'Jane Smith',age:28,position:'Marketing Manager'})
+|
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId('6ad41f069a1247cb716360df') }
+}
+company> db.employees.insert({name:'Emily Johnson',age:35,position:'Data Analyst'})
+|
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId('6ad41f0b9a1247cb716360e0') }
+}
+company> db.employees.find()
+|
+[
+  {
+    _id: ObjectId('6ad41f029a1247cb716360de'),
+    name: 'John Doe',
+    age: 30,
+    position: 'Software Engineer'
+  },
+  {
+    _id: ObjectId('6ad41f069a1247cb716360df'),
+    name: 'Jane Smith',
+    age: 28,
+    position: 'Marketing Manager'
+  },
+  {
+    _id: ObjectId('6ad41f0b9a1247cb716360e0'),
+    name: 'Emily Johnson',
+    age: 35,
+    position: 'Data Analyst'
+  }
+]
+company> db.employees.update({name:'Emily Johnson'},{$set:{position:'Senior DataAnalyst'}})
+|
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+company> db.employees.deleteOne({name:'Jane Smith'})
+|
+{ acknowledged: true, deletedCount: 1 }
+company> db.employees.find()
+[
+  {
+    _id: ObjectId('6ad41f029a1247cb716360de'),
+    name: 'John Doe',
+    age: 30,
+    position: 'Software Engineer'
+  },
+  {
+    _id: ObjectId('6ad41f0b9a1247cb716360e0'),
+    name: 'Emily Johnson',
+    age: 35,
+    position: 'Senior Data Analyst'
+  }
+]
+company>
